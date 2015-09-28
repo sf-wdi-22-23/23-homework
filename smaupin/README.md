@@ -1,1 +1,1 @@
-Smaupin's Homework repo
+Scot Maupin's Homework repo
