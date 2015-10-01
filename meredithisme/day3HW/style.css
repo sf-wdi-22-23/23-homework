@@ -1,0 +1,73 @@
+/*CSS STLYESHEET**/
+
+body {
+	background-color: #999;
+}
+#one {
+	padding: 6px;
+	margin: 15px auto;
+	text-align: center;
+	background-color: #fff;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	border: none;
+	width: 125px;
+	margin-bottom: 10%;
+	border-radius: 2px;
+
+}
+
+#two {
+	padding: 6px;
+	margin: 15px auto;
+	text-align: center;
+	background-color: #fff;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	border: none;
+	width: 125px;
+	margin-bottom: 10%;
+	border-radius: 2px;
+
+}
+
+#three {
+	padding: 6px;
+	margin: 15px auto;
+	text-align: center;
+	background-color: #fff;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	border: none;
+	width: 125px;
+	margin-bottom: 10%;
+	border-radius: 2px;
+
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 5%;
+	text-align: center;
+	color: #fff;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 48px;
+	margin-top: 5%;
+	text-transform: uppercase;
+
+}
+
