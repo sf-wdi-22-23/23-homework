@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brendan's Day 3 Homework</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+			color: white;
+		}
+		.jumbotron {
+			height: 500px;
+			background-image: url("http://media-cdn.tripadvisor.com/media/photo-s/02/6f/4d/c4/filename-tour-eiffel.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		a {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 jumbotron">
+				<h1>Urban Photography</h1>
+				<p>Nam augue lorem, mollis in condimentum a, vestibulum hendrerit leo. Nulla ultricies ligula eget ligula venenatis, sed maximus orci aliquet. Proin quis molestie enim. Nunc non viverra est, et accumsan tortor. Praesent cursus condimentum urna, vel malesuada nisi commodo et. Pellentesque ornare est vel lacus ornare egestas. Cras non erat malesuada, consectetur lacus vitae, mattis libero.</p>
+					<a href="#" class="btn btn-default btn-md" id="sf">SF</a>
+					<a href="#" class="btn btn-default btn-md" id="la">LA</a>
+					<a href="#" class="btn btn-default btn-md" id="ny">NY</a>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#sf').click(function() {
+		$('.jumbotron').css('background-image','url(http://7-themes.com/data_images/out/56/6961756-san-francisco-skyline-night.jpg)');
+		return false;
+	});
+	$('#ny').click(function() {
+		$('.jumbotron').css('background-image','url(http://p1.pichost.me/i/27/1506249.jpg)');
+	});
+		$('#la').click(function() {
+			$('.jumbotron').css('background-image','url(http://allworldtowns.com/data_images/countries/los-angeles/los-angeles-07.jpg)');
+	});
+});
+
+</script>
+
+</body>
+</html>
