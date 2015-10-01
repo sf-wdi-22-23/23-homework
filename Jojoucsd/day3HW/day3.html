@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS.JavaScript">
+    <meta name="author" content="Ling Lu">
+
+    <title>Ling's First Bootstrap Page</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            alert("The paragraph was clicked.");
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Bootstrap & jQuary Project</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Pictures</a></li>
+                <li><a href="#contact">Location Guide</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Reference Sites</li>
+                    <li><a href="#">Yahoo</a></li>
+                    <li><a href="#">Google</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://d2fijpsef22722.cloudfront.net/photos/massive/847187872-san-francisco.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>San Francisco</h1>
+              <p>Note: Trying to copy the Airbnb homepage to creat a carousel web pages using bootstrap and jQuary. Many of the codes are copy and paste from different resources and custermized by me. This site is strictly for learning</p>
+              <p><a class="btn btn-lg btn-primary" id="show" href="#" role="button">Show Images</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://assets.fodors.com/destinations/54476/hotair-balloons-over-vineyards-napa-and-sonoma-california-usa_main.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Napa Valley</h1>
+              <p>Napa Valley the heart of the U.S winery.One of my favorite place to visit. In this page I added jQuary click(). Please click on the paragraphs, and alert window should pop up</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Click Me</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Yoesmite</h1>
+              <p>In this page, I am trying to use jQuary hide the images by clicking on the button. And click the "Show Images" on the San Francisco page will bring backthe images.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button" id="hide">Click Images to hide</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+    <div class="container threeBlocks">
+
+     <div class="row">
+        <div class="col-lg-4">
+          <h2>Block 1</h2>
+          <p>Block 1 cell for future editing using a "col-lg-4 format </p>
+          <p><a class="btn btn-default" href="#" role="button">Mouseover Block &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Block 2</h2>
+          <p>Block 2 cell for future editing using a "col-lg-4 format</p>
+          <p><a class="btn btn-default" href="#" role="button">Mouseover Block &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Block 3</h2>
+          <p>Block 3 cell for future editing using a "col-lg-4 format</p>
+          <p><a class="btn btn-default" href="#" role="button">Mouseover Block &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            alert("You clicked a paragraph.");
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("img").hide();
+        });
+        $("#show").click(function(){
+            $("img").show();
+        });
+    })
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("h2").mouseover(function(){
+            $("h2").css("background-color", "yellow");
+    });
+        $("h2").mouseleave(function(){
+            $("h2").css("background-color", "");
+    });
+});
+</script>
+  </body>
+</html>
