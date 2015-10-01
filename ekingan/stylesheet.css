@@ -1,0 +1,58 @@
+body {
+    background-image: url("http://www.dailygalaxy.com/.a/6a00d8341bf7f753ef014e89d692cc970d-pi");
+		display: inline;
+
+
+}
+li {
+	display:inline;
+}
+ul {
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1 {
+	font-size: 45px;
+	color: white;
+	padding: 80px;
+	text-align: center;
+}
+
+.button1 {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+.button2 {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+
+}
+
+.button3 {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+
+  }
+
+.active {
+    background-color:#556677;
+}
