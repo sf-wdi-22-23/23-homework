@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 3 Homework</title>
+	<meta charset="utf-8">
+
+	<!-- set viewport to device width to allow responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+	<div id="text">
+	<h1>Fun with jQuery</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut faucibus sem, eu semper dolor. Integer consectetur turpis ac ex scelerisque sollicitudin. Curabitur eget diam leo. Maecenas sit amet ligula mollis, consequat justo quis, vestibulum neque. Sed vitae nulla dignissim, congue nibh id, faucibus mauris. In non ultrices turpis. Etiam ornare sagittis dui, sed commodo tellus bibendum in. Nulla non lacinia ante.</p>
+	</div>
+		<button id= "poke1">Happy Button</button>
+		<button id= "poke2">Mean Button</button>
+		<button id= "poke3">Easy Button</button>
+	</div>
+	<div id="image">
+		<img src="http://www.adagio.com/images2/custom_blends/24968.jpg" alt="There is no easy button" style="margin: 50px 200px">
+	</div>
+	</div>
+	<row>
+</div>
+
+<script>
+	$(document).ready(function(){
+
+		$("#poke1").on('mouseover', function() {
+			$('#poke1').slideUp(1000).delay(500).slideDown(1000);
+		});
+		
+		$("#poke2").on('click', function(){
+			$('#text').html("<strong>I take your text away</strong>");
+		});
+
+		$("#poke3").on('click', function(){
+			$('#image').fadeToggle(400);
+		});
+
+	});
+
+</script>
+
+
+</body>
+</html>
