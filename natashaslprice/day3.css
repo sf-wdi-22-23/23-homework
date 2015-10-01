@@ -1,0 +1,30 @@
+img {
+	height: auto;
+	width: auto;
+	max-height: 500px;
+	max-width: 500px;
+}
+
+.button {
+	margin-top: 20px;
+}
+
+#button-one {
+	margin-right: 10px;
+	background-color: #dc143c;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+#button-two {
+	margin-right: 10px;
+	background-color: #dc143c;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+#button-three {
+	background-color: #dc143c;
+	color: #ffffff;
+	border-radius: 5px;
+}
