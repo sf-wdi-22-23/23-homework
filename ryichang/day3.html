@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- set viewport to device width to allow responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles (always require after Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <title>Day 3 Homework</title>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("img").hide();
+    });
+    $("#show").click(function(){
+        $("img").show();
+    });
+    $("#color").click(function(){
+        $("p").addClass("purple");
+    });
+});
+</script>
+<style>
+
+.purple {
+  color: purple;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+       <img src="http://d2odvx3v4cbpyu.cloudfront.net/wp-content/uploads/2015/08/Elon-Musk-Stephen-Colbert.jpg">
+       <p>Since Colbert’s premiere earlier this month, Apple CEO Tim Cook, Uber CEO Travis Kalanick, and SpaceX CEO Elon Musk have been guests on the show—guests who would seem more at place on Colbert’s previous politically minded satirical platform The Colbert Report. But as Lazar explains, what she’s looking for when booking guests like inventor and designer Dominic Wilcox—who appeared on last night's show—is the broad description of anyone at the top of their respective games, and who possesses that catchall buzzword: "authenticity."</p>
+       <button id="hide">Hide</button>
+       <button id="show">Show</button>
+       <button id="color">Change Paragraph Color</button>
+      </div>
+    </div>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+</html>
