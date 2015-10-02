@@ -1,0 +1,25 @@
+a, p, ul, li {
+	font-family: 'Avenir', sans-serif;
+	color: #333;
+	text-align: center;
+}
+
+p {
+	margin-top: 10%;
+}
+
+
+ul {
+	list-style: none;
+
+}
+
+h3 {
+	text-align: center;
+	color: #8525FF;
+}
+
+a {
+	color: #18E0FF;
+	text-decoration: underline;
+}
