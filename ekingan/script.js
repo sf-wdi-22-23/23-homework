@@ -19,4 +19,6 @@ $("#show").click(function(){
 $('.button3').dblclick(function(){
     alert("Go to sleep!!");
 });
+ $('h1').append("(I looked at the sky, then went to sleep)");
+ 
 });
