@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- set viewport to device width to allow responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles (always require after Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- REMOTE SCRIPT (FROM CONTENT DELIVERY NETWORK (CDN)) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- LOCAL SCRIPTS -->
+  <script src="scripts.js"></script>
+
+  <title>to do list</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TO DO</a>
+    </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1></h1>
+        <p></p>
+      </div>
+
+      <div class="col-sm-6">
+        <form  id="new-todo-form" >
+          <div class="form-group">
+              <textarea name="text-box" id="todo-content" cols="30" rows="5" class="form-control"></textarea> 
+          </div>
+          <div class="text-right">
+            <button type="submit" class="btn btn-primary"> Add </button>
+          </div>
+        </form>
+        <hr>
+          <ul class="list-group">
+            <li></li>
+          </ul>
+      </div>
+      <div class="col-sm-3">
+        <h1></h1>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
