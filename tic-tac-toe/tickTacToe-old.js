@@ -1,66 +1,43 @@
 // wait for the DOM to finish loading
 $(document).ready(function () {
   
-  var count = 0; //counts moves
-  var turn = "X"; //starts first move at X
-  var $boxes = $('#id'); //keeps track of boxes
-
+  var count = 0;
+  var board = [1,1,1,1,1,1,1,1,1]; //sets up initial array
+  var turn = "X";
   console.log('javascript is working');
-
-  var gameReset = function () {
-    var count = 0; 
-    var turn = "X";
-    $boxes.text('');
-    $boxes.removeClass("X");
-    $boxes.removeClass("O");
-  };
-
-  var callPlayer = function() {
-    if (count % 2 === 0) {
-      $('h3').text("Player One, Go!");
-      console.log("player 1 goes");
-    } else {
-      $('h3').text('Player Two, Go!');
-      console.log("player 2 goes");
-    }
-};
-
   
-//MAKE RESET BUTTON WORK
-
- $('button').click(function () {
-  gameReset();
-});
-
-
-  
-  
-  $boxes.on('click', function () {
+  $('.box').click(function () {
   	//handles clicks on each box
   	//calls other game functionality
 if ($(this).text() === "") {
   	count = count+1;
   	console.log(count);
   	// print id
-  	$(this).text(turn);
-    $(this).addClass(turn);
+  	var elemID = $(this).attr('id');
+  	console.log('#'+elemID);
 
-    var winner = getWinner();
-    if (winner) {
-      $('h3').text("Player " + winner + "won!");
-      gameReset();
-    
-    } else {
-      $('h3').text("Neither player has won. Please reset the game");
-    }
-
-
-
-  
-  }
+    if ($(this).text() === ""); {
+  	 $('#'+elemID).text(turn).addClass(turn); }
+      //$(this).addClass(turn); }
+      console.log(this);
+    //checkForWinner();
+  	//callPlayer();
+   // fillBoard(elemID);
+   } 
   });
   
-  var changeTurn = function () {  //decides who's turn it is, X other O
+  // all code to manipulate the DOM
+  // goes inside this function
+  
+
+    //pushes x or o into array based on ID of square 
+var fillBoard = function (squareID) {
+    var board = board[(squareID-1)].push(turn);
+    console.log(board);
+    return board;
+  };
+  
+  var turn = function () {  //decides who's turn it is, X or O
     if (count % 2 === 0) {
     	return 'O';
     }
@@ -69,68 +46,34 @@ if ($(this).text() === "") {
     }
   };
 
+  var callPlayer = function() {
+  	if (count % 2 === 0) {
+  		$('h3').text("Player One, Go!");
+  		console.log("player 1 goes");
+  	} else {
+  		$('h3').text('Player Two, Go!');
+  		console.log("player 2 goes");
+  	}
+};
 
-var threeInARow = function (firstBox, secondBox, thirdBox ) {
-    var firstBoxPlayer = $(firstBox).text();
-    var secondBoxPlayer = $(secondBox).text();
-    var thirdBoxPlayer = $(thirdBox).text();
-
-      if ((firstBoxPlayer === secondBoxPlayer) && (secondBoxPlayer === thirdBoxPlayer)) {
-          if (firstBoxPlayer === "X") {
-            return "X"; 
-          } else if (firstBoxPlayer === "O") {
-            return "O"; 
-          } else { return null;}
-        } 
-      };
-
-  var rowWinner = function () {
-    var topRow = threeInARow($boxes.get(0), $boxes.get(1), $boxes.get(2));
-    var middleRow = threeInARow($boxes.get(3), $boxes.get(4), $boxes.get(5));
-    var bottomRow = threeInARow($boxes.get(6), $boxes.get(7), $boxes.get(8));
-    return topRow || (middleRow || bottomRow );
-    };
-
-  var colWinner = function () {
-    var firstCol = threeInARow($boxes.get(0), $boxes.get(3), $boxes.get(6));
-    var middleCol = threeInARow($boxes.get(1), $boxes.get(4), $boxes.get(7));
-    var lastCol = threeInARow($boxes.get(2), $boxes.get(5), $boxes.get(8));
-    return firstCol || (middleCol || lastCol);
-  };
-
-  var diagWinner = function () {
-    var leftDiag = threeInARow($boxes.get(0), $boxes.get(4), $boxes.get(8));
-    var rightDiag = threeInARow($boxes.get(2), $boxes.get(4), $boxes.get(6));
-    return leftDiag || rightDiag;
-
-  };
-
-  var getWinner = function () {
-    return diagWinner || rowWinner || colWinner;
-  };
-
-  });
+//MAKE RESET BUTTON WORK
+$('button').click(function () {
+	location.reload();
+});
 
 
 
-
-/*
  
 // CHECKS TO SEE IF ANYONE HAS WON, THEN RELOADS THE BOARD
  var checkForWinner = function() {
-    console.log($boxes);
+ 		var box = $("#"+elemID).addClass(turn)
 
-    if ( ( $boxes(0) === $boxes(1) ) && ($boxes(2) === $boxes(3)) ) {
-      if ($('.boxes').text() === "X") {
-          $('h3').text('Player One Wins!');
-      }
-    }
-  };  
+     };
+});
+ /* 
 
-    }); 
-
-
-     /* if ( ( $boxes(0) === $boxes(1) ) && ($boxes(2) === $boxes(3))  === "X") || ( (board[3]) && (board[4]) && (board[5]) === "X") || ( (board[6]) && (board[7]) && (board[8]) === "X")|| (board[0] && board[3] && board[6] === "X")|| (board[1] && board[4] && board[7] === "X")|| (board[2] && board[5] && board[8] === "X")|| (board[0] && board[4] && board[8] === "X")|| (board[2] && board[4] && board[6] === "X"))  
+for (var i = 0; i < 9; i++) { 
+      if ( ( (board[0]) && (board[1]) && (board[2]) === "X") || ( (board[3]) && (board[4]) && (board[5]) === "X") || ( (board[6]) && (board[7]) && (board[8]) === "X")|| (board[0] && board[3] && board[6] === "X")|| (board[1] && board[4] && board[7] === "X")|| (board[2] && board[5] && board[8] === "X")|| (board[0] && board[4] && board[8] === "X")|| (board[2] && board[4] && board[6] === "X"))  
                     { 
                       $('h3').text("Player One Wins!");
                       console.log("player 1 wins");
@@ -149,11 +92,8 @@ var threeInARow = function (firstBox, secondBox, thirdBox ) {
           else {   // IF NO ONE HAS WON, KEEPS PLAYING
             return; 
     }
+      }
       };
-      });
-
-
-      /*
     var fillBoard = function () {
     var board = board[(elemID-1)].push(turn);
     console.log(board);
