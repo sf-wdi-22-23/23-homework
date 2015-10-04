@@ -1,0 +1,80 @@
+
+body {
+  background-image: url(http://i.imgur.com/d80yEyZ.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#xwins{
+  width:270px;
+  height:150px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-75px 0 0 -135px;
+}
+
+#ywins{
+  width:270px;
+  height:150px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-75px 0 0 -135px;
+}
+
+#game {
+}
+
+#board {
+	background-image: url(http://i.imgur.com/IlL4Jwh.png);
+  	background-size: cover;
+}
+
+  #container-square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:100%; /* = 100% - 2*10% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
