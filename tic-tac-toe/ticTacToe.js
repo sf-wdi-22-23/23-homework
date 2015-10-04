@@ -6,9 +6,6 @@ $(document).ready(function () {
 
   console.log('javascript is working');
   
-
-
-
   $('.box').click(function () {
   	//handles clicks on each box
   	//calls other game functionality
@@ -19,15 +16,22 @@ $(document).ready(function () {
   	var elemID = $(this).attr('id');
   	console.log('#'+elemID);
   	$('#'+elemID).text(turn);
-  		callPlayer();
-  		fillBoard();
-  		//checkForWinner();
 
+  	callPlayer();
+    fillBoard(elemID);
+    checkForWinner();
   });
   
   // all code to manipulate the DOM
   // goes inside this function
   
+
+    //pushes x or o into array based on ID of square 
+var fillBoard = function (squareID) {
+    var board = board[(squareID-1)].push(turn);
+    console.log(board);
+    return board;
+  };
   
   var turn = function () {  //decides who's turn it is, X or O
     if (count % 2 === 0) {
@@ -54,37 +58,19 @@ $('button').click(function () {
 });
 
 
-//pushes x or o into array based on ID of square 
-  var fillBoard = function () {
-  	var board = board[(elemID-1)].push(turn);
-		console.log(board);
-		return board;
-	
-  };
+
+ 
 // CHECKS TO SEE IF ANYONE HAS WON, THEN RELOADS THE BOARD
  var checkForWinner = function() {
  		for (var i = 0; i < 9; i++) { 
- 			if ((board[0] && board[1] && board[2] === "X")
- 				|| (board[3] && board[4] && board[4] === "X")
- 					|| (board[6] && board[7] && board[8] === "X")
- 						|| (board[0] && board[3] && board[6] === "X")
- 							|| (board[1] && board[4] && board[7] === "X")
- 								|| (board[2] && board[5] && board[8] === "X")
- 									|| (board[0] && board[4] && board[8] === "X")
- 										|| (board[2] && board[4] && board[6] === "X")) { 
+ 			if ( ( (board[0]) && (board[1]) && (board[2]) === "X") || ( (board[3]) && (board[4]) && (board[4]) === "X") || ( (board[6]) && (board[7]) && (board[8]) === "X")|| (board[0] && board[3] && board[6] === "X")|| (board[1] && board[4] && board[7] === "X")|| (board[2] && board[5] && board[8] === "X")|| (board[0] && board[4] && board[8] === "X")|| (board[2] && board[4] && board[6] === "X"))  
+                    { 
  											$('h3').text("Player One Wins!");
  											console.log("player 1 wins");
  											location.reload();
  										}
  					
- 				else if ((board[0] && board[1] && board[2] === "O")
- 				|| (board[3] && board[4] && board[4] === "O")
- 					|| (board[6] && board[7] && board[8] === "O")
- 						|| (board[0] && board[3] && board[6] === "O")
- 							|| (board[1] && board[4] && board[7] === "O")
- 								|| (board[2] && board[5] && board[8] === "O")
- 									|| (board[0] && board[4] && board[8] === "O")
- 										|| (board[2] && board[4] && board[6] === "O")) {
+ 				else if  ((board[0] && board[1] && board[2] === "O") || (board[3] && board[4] && board[4] === "O") || (board[6] && board[7] && board[8] === "O") || (board[0] && board[3] && board[6] === "O") || (board[1] && board[4] && board[7] === "O") || (board[2] && board[5] && board[8] === "O") || (board[0] && board[4] && board[8] === "O") || (board[2] && board[4] && board[6] === "O")) {
  											$('h3').text("Player Two Wins!");
  											console.log("player 1 wins");
  											location.reload();
@@ -95,12 +81,18 @@ $('button').click(function () {
  											location.reload(); }
  					else {   // IF NO ONE HAS WON, KEEPS PLAYING
  						return; 
- 			}
+ 		}
  			}
  			};
 
 });
  /* 
+
+
+    var fillBoard = function () {
+    var board = board[(elemID-1)].push(turn);
+    console.log(board);
+  };
 switch(board) {
   	case (elemID = 1):
 
