@@ -1,3 +1,5 @@
+
+//submitting for help!!
 // wait for the DOM to finish loading
 $(document).ready(function () {
   
