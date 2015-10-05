@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script src ="ticTacToe.js"></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>Space Jammer </br>Tic Tac Toe</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+      <div id="turnEdit">
+          <p> The Game Begins with WDI 23</p>
+      </div>
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-md-6 col-md-offset-3" id="board">
+
+          <!-- you can put rows inside of columns! -->
+          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+          <div class="row">
+            <div class="col-sm-12 box" name = "grid">
+              <div id ="box1" name = "space" class = "freeSpace">box 1</div>
+              <div id ="box2" name = "space" class = "freeSpace">box 2</div>
+              <div id ="box3" name = "space" class = "freeSpace">box 3</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 box" name = "grid">
+              <div id ="box4" name = "space" class = "freeSpace">box 4</div>
+              <div id ="box5" name = "space" class = "freeSpace">box 5</div>
+              <div id ="box6" name = "space" class = "freeSpace">box 6</div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-12 box" name = "grid">
+              <div id ="box7" name = "space" class = "freeSpace">box 7</div>
+              <div id ="box8" name = "space" class = "freeSpace">box 8</div>
+              <div id ="box9" name = "space" class = "freeSpace">box 9</div>
+            </div>
+          </div>
+
+          </div>
+        <div class="col-md-6 col-md-offset-3 row">
+            <button id="reset" class="buttonReset"> Reset Board</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
