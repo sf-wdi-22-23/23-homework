@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script rel src="ticTacToe2.js"></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>Tic Tac Toe</h1>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-xs-3">
+          <div class="turnBox">
+            <div class="col-sm-12 turnLabel">Next Player</div>
+            <div class="col-sm-12 turnDisplay"></div>
+          </div>
+        </div>
+        <div class="col-sm-6" id="board">
+
+          <!-- you can put rows inside of columns! -->
+          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+          <div class="row">
+            <div class="col-md-4 box A"></div>
+            <div class="col-md-4 box B"></div>
+            <div class="col-md-4 box C"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 box D"></div>
+            <div class="col-md-4 box E"></div>
+            <div class="col-md-4 box F"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 box G"></div>
+            <div class="col-md-4 box H"></div>
+            <div class="col-md-4 box I"></div>
+
+            <button type="button" class="col-sm-12 reset-btn btn btn-default">Reset</button>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
