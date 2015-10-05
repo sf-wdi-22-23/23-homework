@@ -1,0 +1,90 @@
+
+
+#header {
+    padding-bottom: 25px;
+    background: white;
+    border-radius: 5px;
+    margin: 15px;
+    border: solid black 1px;
+}
+
+#humanPlayer {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 350px;
+    background: white;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#computerPlayer {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 350px;
+    background: white;
+    border-radius: 5px;
+    border: solid black 1px;
+    position: relative;
+    left: 30px;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: relative;
+    left: 95px;
+}
+
+.bg1 {
+    background-image: url('http://www.nationofchange.org/sites/default/files/DickCheneyEspionage062913.jpeg');
+}
+.bg2 {
+    background-image: url('http://www.ruralking.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/005071623.jpg');
+}
+
+#field1 {
+    background-size: cover;
+    background-position: center;
+}
+  
+#field2 {
+    background-size: cover;
+    background-position: center;
+}
+
+#field3 {
+    background-size: cover;
+    background-position: center;
+}
+
+#field4 {
+    background-size: cover;
+    background-position: center;
+}   
+
+#field5 {
+    background-size: cover;
+    background-position: center;
+} 
+
+#field6 {
+    background-size: cover;
+    background-position: center;
+}  
+
+#field7 {
+    background-size: cover;
+    background-position: center;
+}
+   
+#field8 {
+    background-size: cover;
+    background-position: center;
+} 
+
+#field9 {
+    background-size: cover;
+    background-position: center;
+}
