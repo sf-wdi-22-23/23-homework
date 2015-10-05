@@ -1,0 +1,29 @@
+body {
+	background-color: #f8f8ff;
+}
+
+h1 {
+	color: #4682b4;
+}
+
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 5px solid #f8f8ff;
+  height: 150px;
+  text-align: center;
+  font-size: 100px;
+  background-color: #ffe4e1;
+  color: #f08080;
+}
+
+p {
+	color: #4682b4;
+}
+
+#reset-btn {
+	margin: 10px 0;
+}
+
