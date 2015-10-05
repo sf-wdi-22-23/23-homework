@@ -18,7 +18,8 @@ $(document).ready(function(){
   		if(32 === event.keyCode){
   			startTime = Date.now();
 			console.log("start",startTime);
-	  	}
+      }
+      var t = setTimeout(startTime, 500);
   	}
   });
 });
