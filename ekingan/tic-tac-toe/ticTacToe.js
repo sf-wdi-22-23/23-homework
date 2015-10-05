@@ -3,11 +3,11 @@ $(document).ready(function () {
   
   var count = 0; //counts moves
   var turn = "X"; //starts first move at X
-  var $boxes = $('#id'); //keeps track of boxes
+  var $boxes = $('#id'); //keeps track of boxes by ID
 
-  console.log('javascript is working');
+  console.log('javascript is working'); // check to see it is working
 
-  var gameReset = function () {
+  var gameReset = function () {  //this resets the game to original state
     var count = 0; 
     var turn = "X";
     $boxes.text('');
@@ -15,8 +15,8 @@ $(document).ready(function () {
     $boxes.removeClass("O");
   };
 
-  var callPlayer = function() {
-    if (count % 2 === 0) {
+  var callPlayer = function() {   // this puts a propt on the page showing
+    if (count % 2 === 0) {          //which player is to go next
       $('h3').text("Player One, Go!");
       console.log("player 1 goes");
     } else {
@@ -38,19 +38,26 @@ $(document).ready(function () {
   $boxes.on('click', function () {
   	//handles clicks on each box
   	//calls other game functionality
-if ($(this).text() === "") {
+
+if ($(this).text() === "") {   //wont let a play play on an occupied space
   	count = count+1;
   	console.log(count);
   	// print id
-  	$(this).text(turn);
-    $(this).addClass(turn);
 
-    var winner = getWinner();
+  	$(this).text(turn);  //puts X or O in box
+    $(this).addClass(turn);  //adds X or O to code
+    
+    callPlayer();  //prompts the player (not working)
+
+
+    var winner = getWinner();   //tests for a winner, if a winner exists, alerts players
     if (winner) {
       $('h3').text("Player " + winner + "won!");
-      gameReset();
-    
-    } else {
+      gameReset();   //resets game
+      
+    } else if (count < 9) {   //if there are empty boxes, play continues
+      changeTurn(); 
+    } else {   //if board is full, asks player to reset game
       $('h3').text("Neither player has won. Please reset the game");
     }
 
@@ -70,8 +77,8 @@ if ($(this).text() === "") {
   };
 
 
-var threeInARow = function (firstBox, secondBox, thirdBox ) {
-    var firstBoxPlayer = $(firstBox).text();
+var threeInARow = function (firstBox, secondBox, thirdBox ) {  //checks to see if there 
+    var firstBoxPlayer = $(firstBox).text();                  //are three X or O in a row
     var secondBoxPlayer = $(secondBox).text();
     var thirdBoxPlayer = $(thirdBox).text();
 
@@ -80,8 +87,10 @@ var threeInARow = function (firstBox, secondBox, thirdBox ) {
             return "X"; 
           } else if (firstBoxPlayer === "O") {
             return "O"; 
-          } else { return null;}
-        } 
+          } 
+          }
+            return null; //checks to see if there is a winner CHECK THIS CODE
+         
       };
 
   var rowWinner = function () {
