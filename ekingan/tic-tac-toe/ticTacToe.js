@@ -5,7 +5,7 @@ $(document).ready(function () {
   
   var count = 0; //counts moves
   var turn = "X"; //starts first move at X
-  var $boxes = $('#id'); //keeps track of boxes by ID
+  var $boxes = $('.box'); //keeps track of boxes by ID
 
   console.log('javascript is working'); // check to see it is working
 
@@ -17,7 +17,15 @@ $(document).ready(function () {
     $boxes.removeClass("O");
   };
 
-  var callPlayer = function() {   // this puts a propt on the page showing
+  var changeTurn = function () {
+    if (turn === "X") {
+      turn = "O";
+    } else {
+      turn = "X";
+    }
+  };
+
+/*  var callPlayer = function() {   // this puts a propt on the page showing
     if (count % 2 === 0) {          //which player is to go next
       $('h3').text("Player One, Go!");
       console.log("player 1 goes");
@@ -27,14 +35,14 @@ $(document).ready(function () {
     }
 };
 
-  
-//MAKE RESET BUTTON WORK
+  //MAKE RESET BUTTON WORK
 
  $('button').click(function () {
   gameReset();
 });
 
 
+*/
   
   
   $boxes.on('click', function () {
@@ -49,18 +57,30 @@ if ($(this).text() === "") {   //wont let a play play on an occupied space
   	$(this).text(turn);  //puts X or O in box
     $(this).addClass(turn);  //adds X or O to code
     
+
+     var callPlayer = function() {   // this puts a propt on the page showing
+    if (count % 2 === 0) {          //which player is to go next
+      $('h3').text("Player One, Go!");
+      console.log("player 1 goes");
+    } else {
+      $('h3').text('Player Two, Go!');
+      console.log("player 2 goes");
+    }
+};
+
+
     callPlayer();  //prompts the player (not working)
 
 
     var winner = getWinner();   //tests for a winner, if a winner exists, alerts players
     if (winner) {
-      $('h3').text("Player " + winner + "won!");
+      alert("Player " + winner + "won!");
       gameReset();   //resets game
       
     } else if (count < 9) {   //if there are empty boxes, play continues
-      changeTurn(); 
+      
     } else {   //if board is full, asks player to reset game
-      $('h3').text("Neither player has won. Please reset the game");
+      alert("Neither player has won. Please reset the game");
     }
 
 
@@ -69,14 +89,14 @@ if ($(this).text() === "") {   //wont let a play play on an occupied space
   }
   });
   
-  var changeTurn = function () {  //decides who's turn it is, X other O
+ /* var changeTurn = function () {  //decides who's turn it is, X other O
     if (count % 2 === 0) {
     	return 'O';
     }
     else {
     	return 'X';
     }
-  };
+ };  */ 
 
 
 var threeInARow = function (firstBox, secondBox, thirdBox ) {  //checks to see if there 
@@ -96,22 +116,22 @@ var threeInARow = function (firstBox, secondBox, thirdBox ) {  //checks to see i
       };
 
   var rowWinner = function () {
-    var topRow = threeInARow($boxes.get(0), $boxes.get(1), $boxes.get(2));
-    var middleRow = threeInARow($boxes.get(3), $boxes.get(4), $boxes.get(5));
-    var bottomRow = threeInARow($boxes.get(6), $boxes.get(7), $boxes.get(8));
+    var topRow = threeInARow($boxes.eq(0), $boxes.eq(1), $boxes.eq(2));
+    var middleRow = threeInARow($boxes.eq(3), $boxes.eq(4), $boxes.eq(5));
+    var bottomRow = threeInARow($boxes.eq(6), $boxes.eq(7), $boxes.eq(8));
     return topRow || (middleRow || bottomRow );
     };
 
   var colWinner = function () {
-    var firstCol = threeInARow($boxes.get(0), $boxes.get(3), $boxes.get(6));
-    var middleCol = threeInARow($boxes.get(1), $boxes.get(4), $boxes.get(7));
-    var lastCol = threeInARow($boxes.get(2), $boxes.get(5), $boxes.get(8));
+    var firstCol = threeInARow($boxes.eq(0), $boxes.eq(3), $boxes.eq(6));
+    var middleCol = threeInARow($boxes.eq(1), $boxes.eq(4), $boxes.eq(7));
+    var lastCol = threeInARow($boxes.eq(2), $boxes.eq(5), $boxes.eq(8));
     return firstCol || (middleCol || lastCol);
   };
 
   var diagWinner = function () {
-    var leftDiag = threeInARow($boxes.get(0), $boxes.get(4), $boxes.get(8));
-    var rightDiag = threeInARow($boxes.get(2), $boxes.get(4), $boxes.get(6));
+    var leftDiag = threeInARow($boxes.eq(0), $boxes.eq(4), $boxes.eq(8));
+    var rightDiag = threeInARow($boxes.eq(2), $boxes.eq(4), $boxes.eq(6));
     return leftDiag || rightDiag;
 
   };
