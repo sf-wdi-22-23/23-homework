@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="oop.css">
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script src="oop.js"></script>
+
+    <!--start your code -->
+
+    <title>OOP.html</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>Object Oriented Programming </h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-md-8 col-md-offset-3" id="board">
+          <h3> Questions</h3>
+
+          <!-- you can put rows inside of columns! -->
+          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+          <div class="row">
+            <div class="col-md-8 box" id="1">
+              <h4> 
+              <p>1. The difference between a constructor and a prototype is that a constructor is a method used to set the object's properties or to call methods that will be part of the 
+              insantiatiation of an object. A object will inherit properties and methods from a prototype.</p>
+              <p>2. The use of "this" inside a constructor is used to refer to the current object and allows you to work with the properties from within that class.</p>
+              <p>3. I do not have any specific questions about the reading but would like to see more examples of these consepts to illustrate how certain conventions are used in Javascript</p>
+
+            </div>
+            <div class="col-md-4 box" id="2"></div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
