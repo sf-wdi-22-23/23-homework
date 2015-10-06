@@ -1,0 +1,57 @@
+body {	
+}
+
+//******************
+*			*
+* animal-specific ID's   *
+*			*
+******************//
+
+#mouse{
+	color:gray;
+}
+#canary{
+	color:orange red;
+}
+#penguin{
+	color:black;
+}
+
+#salmon{
+	color:salmon;
+}
+#cat{
+	color:sienna;
+}
+#goldfish {
+	color:gold;
+}
+#dog {
+	color:tan;
+}
+#sheep {
+	color:steelBlue;
+}
+#parakeet{
+	color:lime;
+}
+
+#tuna {
+	color: purple;
+}
+
+//**********************
+*			       *
+* kingdom-specific classes   *
+*			       *
+**********************//
+
+.bird{
+	background:lightGray;
+}
+.fish{
+	background:lightYellow;
+}
+.mammal{
+	background:lavendarblush;
+}
