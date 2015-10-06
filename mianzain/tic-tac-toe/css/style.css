@@ -1,0 +1,43 @@
+body {
+  width: 100%;
+  background-image:url();
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#main_container {
+	margin: 10px auto;
+	width: 800px;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'ariel';
+  font-size: 50px;
+}
+
+table {
+  margin: 0px auto;
+}
+
+.box_cell {
+	border:black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background: #BADA55;
+}
+
+.hover {
+  background-color: #aaa;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
