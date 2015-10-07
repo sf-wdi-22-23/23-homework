@@ -1,0 +1,11 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+}
+h3 {
+	text-align: center;
+}
