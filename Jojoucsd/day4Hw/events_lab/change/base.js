@@ -13,10 +13,10 @@ $(document).ready(function(){
 		if (total > 0) {
 			$('input').on('click',function(e){
 				var reset= $('<input type="button" value="reset" id="reset"/>')
-				$('body').append(reset)
-				$("input#left").val("")
-				$('input#right').val("")
-				$('#total').val("")
+				$('body').append(reset);
+				$("input#left").val("");
+				$('input#right').val("");
+				$('#total').val("");
 			})	
 		}
 	})

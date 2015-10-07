@@ -4,13 +4,11 @@ $(document).ready(function () {
   // all code to manipulate the DOM
   // goes inside this function
 
- 
   //var $random = $('#random'); // Wants to add AI for computer's move in the future
   var $reset = $('#reset'); //refresh page
   var $boxes = $('.box'); //each individual box
   
   var player = "X"; //first player
-  
   var counts = 0; //how many moves on the field
 
   function playAgain(){
@@ -23,19 +21,19 @@ $(document).ready(function () {
   };
 
   function switchPlayer(){
-  	if (player === "X"){
+  	if (player == "X"){
      player = "O";
-      $('.msg-alert').append("Player O's turn"); //Wants to alert who's turn but not working atm
+      //$('.msg-alert').append("Player O's turn"); //Wants to alert who's turn but not working atm
    }else{
     player = "X";
-      $('.msg-alert').append("Player X's turn"); //same as above
+      //$('.msg-alert').append("Player X's turn"); //same as above
   }
 };
 
 //check winning combo
 
 function winCombo (click, first, second, third) {
-return ($(first).text() === click) && ($(second).text() === click) && ($(third).text() === click);
+return ($(first).text() == click) && ($(second).text() == click) && ($(third).text() == click);
 };
 
 function diaCheck(click){
@@ -66,6 +64,11 @@ function winnerCheck(click){
  console.log(getWinner(click)); //Insanity Check
 };
 
+//function advanceCheck(click){
+  var boxesTotal = firstBox[i] + secondBox[i] + thirdBox[i];
+  if (boxesTotal == 3|| 9 || 12 || 15 || 21)
+    return boxesTotal
+}
 function getWinner(){
   if (winnerCheck("X")){
     return "X";
@@ -81,21 +84,21 @@ function getWinner(){
 
 $boxes.on('click', function(){
   var winner = getWinner();
-  
-	if($(this).text()===""){
+
+	if($(this).text()==""){
 		$(this).text(player);
-    $('.msg-alert').append("Player O's turn"); //another try to add the alert but not working
+    //$('.msg-alert').append("Player O's turn"); //another try to add the alert but not working
 		$(this).addClass(player);
 		counts = counts + 1;
 
 		if(winner) {
 			alert("Player " + winner + " won!");
-			//playAgain();
+			playAgain();
 		}else if (counts < 9){
 			switchPlayer();
 		}else{
 			alert("Draw Game, no  winner!");
-			//playAgain();
+			playAgain();
 		}
 	}
 });

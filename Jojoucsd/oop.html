@@ -1,0 +1,28 @@
+Constructor often use "this" refer to the parent function or object. And this is directional and pointing to the associate function and "this" also must be within the function to make the scope of the variable working. Examples like :
+
+function Person(name, family)(){
+	this.name = name;
+	this.family = family;
+	this.getFull = function() {
+		return this.name + " " + this.family;
+	};
+}
+
+"this" refers to the function Person. Instead to type Person.name = name; Person.family = family. this shorter the naming and also makes developer can write more complex codes.
+
+Prototype is an instance for users to save memories and more advance to use from my understanding. And prototype often declare outside of the function and just use prototype to reference to the original function.
+similar example as above:
+
+function Person(name, family){
+	this.name = name;
+	this.family = family;
+}
+
+Person.prototype.getFull = function (){
+	return this.name + " " + this.family;
+};
+
+the prototype function is delcare outside of Person function, but since is a prototype, I will think it is a copy cat of Person , which has all the key and value such as name and family. but on top of the those we added a getFull function and returns the "mother" function Person valuve. I can totally see the benefits of setting up with this. But still not sure how I would I use it in my codes.
+
+Questions about Objects :
+I know we can push and Object in to another Object, but when we push Person in to other objects, if Person has an prototype. Do we have to push the prototype as well? Or just push the Person function and the prototype will already reference to the "finished" products
