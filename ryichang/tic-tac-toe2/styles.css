@@ -1,0 +1,21 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+  font-size: 80px;
+
+}
+
+.X {
+	font-color: red;
+}
+
+.O {
+	font-color: blue;
+}
+.btn {
+	background-color: red;
+}
