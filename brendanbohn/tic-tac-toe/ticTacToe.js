@@ -36,8 +36,6 @@ $(document).ready(function() {
 
 	function resetGame() {
 		$box.text("");
-		$box.removeClass("X");
-		$box.removeClass("0");
 		player = "X";
 		moves = "0";
 	}
