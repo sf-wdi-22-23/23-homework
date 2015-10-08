@@ -1,0 +1,22 @@
+body{
+  background-color: #ff534b;
+  text-align: center;
+}
+
+h1{
+  color: #ffac00;
+  margin-bottom: 30px;
+}
+
+#map-canvas {
+  border-style: outset;
+  height: 500px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  padding-bottom: 2em;
+  width:100%;
+}

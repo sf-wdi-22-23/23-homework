@@ -1,0 +1,39 @@
+body {
+	background-color: #white;
+	margin:auto;
+	font-family: 'Montserrat', sans-serif;
+	color:#ff534b;
+}
+
+h2 {
+	text-align: center;
+	color:#0241e2;
+}
+
+h3 {
+	text-align: center;
+}
+
+.col-md-12 {
+	color:#0241e2;
+	width:100%;
+	margin-bottom: 30px;
+}
+
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 3px solid #0241e2;
+  height: 100px;
+  text-align: center;
+  background-color: ;
+  font-size: 60px;
+
+}
+
+.reset-button {
+	margin:20px;
+	color:white;
+}
