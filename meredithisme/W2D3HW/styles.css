@@ -1,0 +1,29 @@
+body{
+  background-color: #9CDDC8;
+  color: #fff;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1{
+  color: #fff;
+  font-weight: 300;
+}
+
+#map-canvas {
+  border-style: none;
+  height: 400px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  padding-bottom: 2em;
+  width:100%;
+}
+
+p {
+	color: #999;
+}
