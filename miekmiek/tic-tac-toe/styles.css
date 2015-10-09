@@ -1,0 +1,23 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.X {
+	font: 125px bold black;
+}
+
+.O {
+	font: 125px bold black;
+}
+
+button {
+	font-size: 40px;
+	height: 75px;
+	width: 125px;
+	margin: 25px;
+}
