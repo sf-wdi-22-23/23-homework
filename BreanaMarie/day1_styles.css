@@ -1,0 +1,13 @@
+wrapper {
+	width: 800px;
+	background: #ffffff;
+}
+
+p {
+	font-size: 20px;
+	color: white;
+}
+li {
+	font-weight: bold;
+	
+}

@@ -1,0 +1,21 @@
+body {
+  background: read
+}
+
+p {
+  color: orange;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.comments {
+    font-weight: bold;
+    color: #64FE2E; /* green */
+}
+
+#spartacus {
+    font-style: italic;
+    color: #0040FF; /*blue*/
+}
