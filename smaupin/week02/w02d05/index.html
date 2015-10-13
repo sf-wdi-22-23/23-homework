@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MicroBlogScot</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="base.js"></script>
+  </head>
+  <body>
+  <!-- background video -->
+  <video autoplay loop poster="bg-vid-sm.png" id="bgvid">
+      <source src="bg-vid-sm.webm" type="video/webm">
+      <source src="bg-vid-sm.mp4" type="video/mp4">
+  </video>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="top-div">
+            <h1>Scot's Microblog</h1>
+            <hr>
+            <!-- the input field - bootstrap -->
+            <div>
+              <form id="post-form">
+                <input type="text" class="form-control" placeholder="Click here, then mash some keys, boss." id="m-post-input">
+                <span class="input-group-btn">
+                  <input type="submit" class="btn btn-default" id="post-btn" value="Post" />
+                </span>
+              </form>
+            </div>
+            <hr>
+            </div>
+          <div id="bottom-div">
+            <!-- tester posts 
+            <div class="m-post">
+              <p class="post-text">Test Sample Posted stuff.lsfksflkshkfhslkfhlkshfklhskahfkl skhfkhfklh skfjksafklhsal  khslfklhklfhas lkfklsshfl ksh k</p>
+              <p class="post-date-time">Jan 03, 2000 - 9:25am</p>
+
+            </div>
+            <div class="m-post">
+              <p class="post-text">More Moe MORE MORE MOAR</p>
+              <p class="post-date-time">Jan 02, 2000 - 9:25am</p>
+            </div>
+            <div class="m-post">
+            <p class="post-text">Yeah this one too.</p>
+            <p class="post-date-time">Jan 01, 2000 - 9:25am</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
