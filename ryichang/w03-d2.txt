@@ -1,0 +1,14 @@
+
+My Pseudo-code routes: 
+
+1.  GET ALL ICE CREAMS "/iceCreams"
+
+2.  GET ICE CREAM BY FLAVOR "/iceCream/:flavor"
+
+3.  GET ALL ICE CREAM FLAVOR CATEGORIES "/categories"
+
+4.  GET CATEGORY: "/categories/:id"
+
+5.  GET ALL FLAVORS IN CATEGORIES "/categories/:id/:flavor"
+
+6.  GET ALL ICE CREAM BY FLAVOR CATEGORIES "/categories/:id/iceCream/:flavor"
