@@ -1,0 +1,9 @@
+RESTful Ice Cream
+
+GET ALL ICE CREAM FLAVORS “/icecream”
+GET ICE CREAM BY FLAVOR “/icecream/:flavors”
+GET ICE CREAM BY TEXTURE “/icecream/:texture”
+GET ICE CREAM BY COLOR “/icecream/:color”
+GET ICE CREAM THAT IS VEGAN “/icecream/:vegan”
+GET ICE CREAM THAT IS BOTH VEGAN AND CREAMY “/icecream/:creamy/:vegan”
+POST NEW FLAVORS “/icecream”
