@@ -1,0 +1,15 @@
+
+
+GET ALL ICECREAM DATA “/icecream”
+
+GET ICREAM FLAVORS BY ID “/icecream/flavors/:id"
+
+GET ALL ICECREAM FLAVORS “/icecream/flavors”
+
+GET ICECREAM TEXTURES “/icecream/textures”
+
+GET ALL TEXTURES BY FLAVOR “/flavors/:id?=/textures”
+
+
+
+

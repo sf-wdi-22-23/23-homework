@@ -1,68 +1,85 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <!-- set viewport to device width to allow responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- link to custom stylesheet (always require after Bootstrap) -->
-     <link rel="stylesheet" href="styles.css">
+  <!-- set viewport to device width to allow responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery from CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- link to custom javascript file (always require after external JS libraries) -->
-    <script type="text/javascript" src="ticTacToe.js"></script>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1>Tic Tac Toe</h1>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
+  <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">
+  <!-- custom styles (always require after Bootstrap) -->
+  <link rel="stylesheet" href="styles.css">
 
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
+  <title>Bootstrap Boilerplate</title>
+</head>
+<body>
 
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="a"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="b"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="c"></div>
-          </div>
+ <!--====== NAVIGATION =====-->
 
-           <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="d"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="e"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="f"></div>
-          </div>
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
-           <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="g"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="h"></div>
-            <div class="col-xs-4 col-sm-4 col-md-4 box" id="i"></div>
-          </div>
-          <div class="row text-center">
-            <div class="col-sm-12">
-              <button class="btn btn-danger" type="reset" value="Reset" id="reset-btn">Play Again</button>
-            </div>
-          </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <!--  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> -->
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-target="loginModal" data-toggle="modal">Login</a></li>
+      </ul>
 
+    
+    </div><!-- /.navbar-collapse -->
+
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--====== END NAVIGATION =====-->
+
+    <div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
         </div>
       </div>
     </div>
-  </body>
+
+
+<!-- ===== CONTENT ====== -->
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h1>SpaceJammers</h1>
+      </div>
+    </div>
+
+
+      
+    </div>
+  </div>
+</body>
 </html>
