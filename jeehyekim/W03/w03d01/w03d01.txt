@@ -1,0 +1,17 @@
+ice cream 
+
+GET ALL FLAVORS "/flavors"
+
+GET FLAVORS BY BRAND "/flavors/:brand"
+
+GET ALL FRUITY  "/flavors/fruity"
+
+GET FLAVORS BY BRAND AND FRUITY "/flavors/:brand/fruity"
+
+GET ALL GLUTEN FREE "/flavors/glutenfree"
+
+GET ALL GLUTEN FREE AND FRUITY "/flavors/glutenfree/fruity"
+
+GET DAIRY FREE BY BRAND "/flavors/:brand/dairyfree"
+
+GET DAIRY FREE AND FRUITY "/flavors/fruity/dairyfree"
