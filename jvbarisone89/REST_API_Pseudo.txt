@@ -1,0 +1,9 @@
+GET ALL FLAVORS “/flavors”
+
+GET FLAVOR BY ID “/flavors/:id"
+
+GET ALL ICE CREAM CATEGORIES “/category:”
+
+GET FLAVOR BY CATEGORY: “/category:/:id"
+
+GET ALL FLAVORS BY CATERGORY "/category/:id/flavors”
