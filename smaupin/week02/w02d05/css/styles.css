@@ -1,0 +1,67 @@
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  color:  #C2EBFF;
+}
+
+.m-post {
+	border: 1px solid black;
+	background-color: white;
+	padding: 10px 12px 0 12px;
+}
+
+.post-text {
+	font-size: 14px;
+}
+
+.post-date-time {
+	font-size: 10px;
+	color: gray;
+	text-align: right;
+	margin: -14px 0 5px 0;
+}
+
+.m-post {
+	border-top: 2px solid #E0E0E0;
+	border-bottom: 2px solid #B8B8B8;
+}
+
+.m-post:first-of-type {
+	border-radius: 4px 4px 0 0;
+	border-top: 1px solid black;
+}
+
+.m-post:last-of-type {
+	border-radius: 0 0 4px 4px;
+	border-bottom: 1px solid black;
+}
+
+#post-btn {
+	float: right;
+	background-color: #478FB2;
+	color: white;
+	border-radius: 4px;
+	margin: 10px 0;
+	border: 1px solid black;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(bg-vid-sm.png) no-repeat;
+    background-size: cover; 
+}
