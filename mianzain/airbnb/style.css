@@ -1,0 +1,51 @@
+h1 {
+    color: orange;
+    text-align: center;
+    line-height:30px;
+    background-color:#eeeeee;
+
+}
+#header {
+    background-color:White;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:4	0px;
+    background-color:#eeeeee;
+    height:300px;
+    /*float:left;*/
+    padding:5px; 
+}
+#section {
+    width:350px;
+    /*float:left;*/
+    padding:10px; 
+}
+#footer {
+    background-color:blue;
+    color:white;
+    /*clear:both;*/
+    text-align:center;
+    padding:70px;
+    /*margin-left: 450px;*/
+    /*margin-right: 700px;*/
+}
+
+.city-box {
+	border: 2px yellow solid;
+	width: 100px;
+	height: 100px;
+}
+
+.cities {
+	background-color: #fafafa;
+}
+
+.city {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	color: blue;
+}
