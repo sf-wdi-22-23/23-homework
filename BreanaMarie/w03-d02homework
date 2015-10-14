@@ -1,0 +1,7 @@
+GET ALL ICECREAM "GET /icecream"
+GET ICECREAM BY FLAVOR "GET /icecream/:flavors"
+GET ALL ICECREAM FLAVORS "GET /icecream/flavors"
+GET FLAVOR BY FRUITY "GET /fruity/:flavor"
+GET FLAVOR BY GLUTEN FREE "GET /gluten_free/:flavor"
+GET FLAVOR BY CHUNKY "GET /chunky/:flavor"
+PUT NEW FLAVOR "PUT/icecream/:flavor"
