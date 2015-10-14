@@ -1,0 +1,11 @@
+// all flavors
+GET ALL FLAVORS “/flavors” 
+
+// specific flavor based on ID
+GET SPECIFIC FLAVOR “/flavors/:id”
+
+// flavors by category
+GET ALL FLAVORS BY CATEGORY “/flavors/category”
+
+// add new flavor
+POST NEW FLAVOR “/flavors/:id”
