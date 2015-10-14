@@ -1,0 +1,13 @@
+Get all icecream flavors “/icecream”
+
+Get icecream by ID “/icecream/:id”
+
+Get icecream fruity “/fruity/:id/icecream”
+
+Get ice-cream gluten free “/glutenfree/:id/icecream”
+
+Get ice-cream chunky “/chunky/:id/icecream”
+
+Post icecream “/icecream/:id”
+
+
