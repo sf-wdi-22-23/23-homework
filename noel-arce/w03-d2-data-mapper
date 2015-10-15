@@ -1,0 +1,33 @@
+1)  var generalAssembly = { cohorts: { id : 42, 
+																			 subject : "WDI", 
+																			 number : 22, 
+																			 room : 1 
+																			}, 
+
+																			{ id : 43,
+																				subject : "WDI",
+																				number : 23,
+																				classroom : 2
+																			};
+
+														hobbies: { name: "boating",
+																		   cost: "very high"
+																			},
+
+																			{ name: "knitting",
+																				cost: "low"
+																			}
+
+																			{ name: "cooking",
+																				cost: "moderate"
+																			}; 
+													};
+
+2) a) Hobby attributes = location, time, intensity.
+	 b) methods to manage include = search(), find(), .get, .post, .put, .delete
+
+3) a) Cohort attributes = students, address, startDate, endDate
+	 b) methods to manage include = search(), find(), .get, .post, .put, .delete
+
+4) a) generic data attributes: name, id, dateCreated, createdBy
+   b) generic methods: .sort, .push, .val, .indexOf
