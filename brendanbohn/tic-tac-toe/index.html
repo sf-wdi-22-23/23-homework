@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- links to a google font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="ticTacToe.js"></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+
+<!-- HEADER -->
+
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <h1>Tic Tac Toe</h1>
+          <hr>
+        </div>
+      </div>
+
+<!-- Player One name entry -->
+
+      <form class="col-xs-3" id="player-one-form"> <!-- action="/todos" -->
+        <div class="form-group">
+          <h3>Player One</h3>
+          <div>
+            <textarea name="" id="player-one-name" rows="1" class="form-control" placeholder="Enter your name"></textarea>
+          </div>
+        </div>
+        <div class="text-left">
+          <button type="submit" class="btn btn-primary btn-sm" id="player-one-submit">Submit</button>                        
+        </div>
+      </form>
+
+<!-- Displays whose turn it is -->
+
+          <div class="col-xs-6 text-center">
+            <h2 class="turn-prompter"></h2>
+          </div>
+
+<!-- Player Two name entry -->
+
+      <form class="col-xs-3" id="player-two-form"> <!-- action="/todos" -->
+        <div class="form-group">
+          <h3 class="text-right">Player Two </h3>
+          <div>
+            <textarea name="" id="player-two-name" rows="1" class="form-control" placeholder="Enter your name"></textarea>
+          </div>
+        </div>
+        <div class="text-right">
+          <button type="submit" class="btn btn-primary btn-sm" id="player-two-submit">Submit</button>                        
+        </div>
+      </form>
+
+<!-- SETS UP THE BOARD -->
+
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-xs-6  col-xs-offset-3" id="board">
+
+          <!-- you can put rows inside of columns! -->
+          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+
+          <!-- TOP ROW -->
+          <div class="row">
+            <div class="col-xs-4 box" id="a"></div>
+            <div class="col-xs-4 box" id="b"></div>
+            <div class="col-xs-4 box" id="c"></div>
+          </div>
+          
+          <!-- MIDDLE ROW -->
+
+          <div class="row">
+            <div class="col-xs-4 box" id="d"></div>
+            <div class="col-xs-4 box" id="e"></div>
+            <div class="col-xs-4 box" id="f"></div>
+          </div>
+
+          <!-- BOTTOM ROW -->
+
+          <div class="row">
+            <div class="col-xs-4 box" id="g"></div>
+            <div class="col-xs-4 box" id="h"></div>
+            <div class="col-xs-4 box" id="i"></div>
+          </div>
+        
+
+<!-- CREATES THE RESET BUTTON -->
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row reset-button">
+        <div class="col-xs-12 text-center">
+          <a href="" id="reset">Reset</a>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

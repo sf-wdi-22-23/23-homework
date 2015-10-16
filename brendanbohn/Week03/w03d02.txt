@@ -1,0 +1,13 @@
+Psuedo REST code:
+
+GET ALL SPORTS "/sports"
+
+GET SPORT BY ID "/sports/:id"
+
+GET ALL ATHLETES "/athletes"
+
+GET ATHLETE: "/athletes/:id"
+
+GET ALL SPORTS BY ATHLETE "/athletes/:id/sports"
+
+GET SPORT BY ATHLETE "/athletes/:id/sports/:id"
