@@ -1,0 +1,17 @@
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  height: 150px;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#turn-display {
+	text-align: center;
+	font-size: 1.3em;
+}
