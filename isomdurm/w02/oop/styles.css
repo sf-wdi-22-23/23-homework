@@ -1,0 +1,17 @@
+body {
+	background-color: black;
+	color: #deb887;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+header {
+	height: 50px;
+}
+
+hr {
+	margin: 40px 0px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
