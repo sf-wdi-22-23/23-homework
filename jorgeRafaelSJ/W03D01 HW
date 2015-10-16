@@ -1,0 +1,23 @@
+W03D01 Homework
+
+Say we want to create an API similar to the one above, that returns data about icecream. We need to be able to get information about specific flavors, as well as all of the flavors we have in our database. We also want to get some flavors by category, like "fruity", "gluten free", or "chunky". Finally we want to add one POST route that allows users of our api to add new flavors!
+
+Write Pseudocode like the above. Be creative, and follow RESTful conventions and best practices.
+
+1. All icecream --> /icecream
+2. Specific flavor --> /icecream/:id
+3. Categories --> /icecream/:category
+
+
+Assuming we're  a form
+
+var flavors = [];
+
+app.post('/icecream', function(req, res){
+	var newflavor;
+	var name = req.body.name;
+	var category = req.body.category;
+	newflavor = {name: name , category: category};
+	flavors.push(newflavor);
+	response.render('icecream', { flavors: flavors });
+});
