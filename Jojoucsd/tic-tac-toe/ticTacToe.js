@@ -10,6 +10,8 @@ $(document).ready(function () {
   
   var player = "X"; //first player
   var counts = 0; //how many moves on the field
+  var addIdx = 0;
+  var addIdo = 0;
 
   function playAgain(){
   	$boxes.text("");
@@ -20,13 +22,19 @@ $(document).ready(function () {
   	counts = 0;
   };
 
-  function switchPlayer(){
+  function switchPlayer(id){
   	if (player == "X"){
+      addIdx = addIdx + id;
+      if(addIdx == 3|| 9 || 12 || 15 || 21){
+        alert("X Win");
+      }
      player = "O";
-      //$('.msg-alert').append("Player O's turn"); //Wants to alert who's turn but not working atm
    }else{
+      addIdo = addIdo + id;
+    if(addIdo == 3|| 9 || 12 || 15 || 21){
+        alert("O Win");}
     player = "X";
-      //$('.msg-alert').append("Player X's turn"); //same as above
+      
   }
 };
 
@@ -36,7 +44,7 @@ function winCombo (click, first, second, third) {
 return ($(first).text() == click) && ($(second).text() == click) && ($(third).text() == click);
 };
 
-function diaCheck(click){
+/*function diaCheck(click){
  var leftDia =winCombo(click, $boxes[0], $boxes[4], $boxes[8]);
  var rightDia =winCombo(click, $boxes[2], $boxes[4], $boxes[6]);
 
@@ -68,22 +76,23 @@ function winnerCheck(click){
   var boxesTotal = firstBox[i] + secondBox[i] + thirdBox[i];
   if (boxesTotal == 3|| 9 || 12 || 15 || 21)
     return boxesTotal
-}
-function getWinner(){
+}*/
+
+/*function getWinner(){
   if (winnerCheck("X")){
     return "X";
   } else if (winnerCheck("O")){
     return "O";
   } else
   return null;
-}
+}*/
 
 //Event Listener
 
 //Clicking Boxes to trigger the event
 
 $boxes.on('click', function(){
-  var winner = getWinner();
+  /*var winner = getWinner();*/
 
 	if($(this).text()==""){
 		$(this).text(player);
@@ -91,11 +100,14 @@ $boxes.on('click', function(){
 		$(this).addClass(player);
 		counts = counts + 1;
 
-		if(winner) {
-			alert("Player " + winner + " won!");
+		/*if(true) {
+			alert("Player " + " " + " won!");
 			playAgain();
-		}else if (counts < 9){
-			switchPlayer();
+		}else */
+    if (true){
+			var id = $(this).attr('id');
+      var idInt = parseInt(id);
+      switchPlayer(idInt);
 		}else{
 			alert("Draw Game, no  winner!");
 			playAgain();
