@@ -18,6 +18,7 @@ Answers:
 1. I worked on my steps first (scope of project).  Then I worked on my user narratives, wireframing and models.  Then I reworked all of these again until I was happy with the project.  Then I got the project approved and went to work.  I did end up revising the user narratives and wireframe partway through (I think on the 3rd or 4th day).
 2. I spent too much time working on stuff before modifying my user narratives and wireframe and then I had to redo stuff.  Next time I want to be more solid in my plan before I start so that I don't have to redo anything.
 3. I had a problem with my jquery validation.  I was trying to make a confirm password input that would require users to enter their passowrd twice (while ensuring the passwords match).  I've included the jquery validation function, but once the passwords don't match, the error message will not go away after the user fixes the passwords so that they do match.  My validation code looks like this:
+
 ```js //validations
   $('#signUpForm').validate({
     rules: {
