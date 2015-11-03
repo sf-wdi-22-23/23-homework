@@ -19,7 +19,8 @@ Answers:
 2. I spent too much time working on stuff before modifying my user narratives and wireframe and then I had to redo stuff.  Next time I want to be more solid in my plan before I start so that I don't have to redo anything.
 3. I had a problem with my jquery validation.  I was trying to make a confirm password input that would require users to enter their passowrd twice (while ensuring the passwords match).  I've included the jquery validation function, but once the passwords don't match, the error message will not go away after the user fixes the passwords so that they do match.  My validation code looks like this:
 
-```js //validations
+```js 
+//validations
   $('#signUpForm').validate({
     rules: {
       email: {
@@ -37,6 +38,7 @@ Answers:
           }
     }
   });
+  
 ```
 
 Resourcefulness
