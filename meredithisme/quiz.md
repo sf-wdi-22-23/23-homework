@@ -36,7 +36,7 @@ looping through all users and seed data on the client side to see if it matches 
 Infinite loop, 300+ loops, client side spaghetti, heartache
 
 
-'''js/
+'''//validations
 for (var j = 0; j < response.users.length; j++){
 for (var k=0; k< response.users[j].reviews.length; k++) {
 if(response.users[j].reviews[k].yelp_id === response.yelpResults[i].id ){
