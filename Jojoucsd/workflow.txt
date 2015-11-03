@@ -1,0 +1,57 @@
+# Concepts:
+
+## Psuedocode: codes witout proper syntax but the workflow and idea is correct and should execute the ideas and codes.
+
+## Schema wireframing: relationship between modals, and inter action between users and client or server.
+
+#UX and Workflow
+
+1. Teddy the texter - I have a pain in my knee. I text 1800texthelpnow that "I have a pain in my knee". They respond.
+Nelly the nurse - I'm sitting at my computer and am logged in to texthelpnow and I see "I have a pain in my knee", and can respond and have a conversation.
+
+1. Ling the user - I go to Airbnb website, and want to search open rentals in SD area.
+Airbnb the client - takes my search key words and passes the infomation to server.
+Airbnb server - react to the keyworld search and return with a list of open rentals to client
+Airbnb client - display the results from server and show to user
+
+2. Outside-in is a concept we using for building web site and app. start from outside means we create the html or ejs file first. In users experiences which is the view part. We decide what we want users to experiernce and basic skeleton of the web-app,than we build our dom elements, the app.js file where jQuery is interact with the ejs and the server. we have ajax call in this file and also the event listeners. Lastly we build our server rest-api routes and database. The DB associated with models and the rotues interact with routes.
+
+3. console.log is my first go to debugging rules
+reading the error log and go to the line and character is another debugging method I use.
+last, it's open dev tools and inspect the elements and try to debugg from there.
+
+#Project 1 Review
+
+1. for project 1 I did not have a good workflow and user narratives to begin with. First, I am not sure how I want to work with the schema wireframe and users experiences. Which wasted my two days of time trying to catch something totally not related to my projects. For example, I am keep trying to display the message return from twilio at campus. But at that time, my app does not have an log in sign up or a show page. I totally jumpped ahead of the the steps and not follow the workflow. I adjusted my workflow on Wend and start building my login signup and view ejs and than adding app.js mongo db and routes to the app. Which makes more sense to the project and helped me moving forward and able added the twilio and socket.io feature to the app on thurday night. I think without Braus pointing out to me that I am not following the workflow steps of my Project 1, I will side track even further and may be result not able to finish project 1.
+
+2. I think the workflow I wish to have for project one is, first have more time and clear picture of what I am doing. My personal issued prevented me to clearly stick with the workflow. And blindly I just start writing codes and trying to build stuff. I think I try to build a car first before having bike or any simpler models. Which in the future project, I will stick with start with simple and work my way up.
+
+3. Right now one of the major problem with my app is without proper login and sign up validation. I want to accomplish is users can login and sign up to my site without experience crashing because of the wrong password or wrong usersname. Than after that, I would like to add more css and bootstrap feature to my app and make it more look like an chat room.
+
+What I have tried so far is basic validation from mongoose and bootstrap. I also added client side error handling as well yesterday in the peer review. But the app is still lacks an server side error handling method and Which is something I would like to work on in the future.
+
+The major promblem I am having beside the login and sign up validation, I also want to work on socket.io. Right now my io emits to every chatroom if actives at the same. If there are more than one users is logged in to my app and using the same twilio number to chat with any users. io will emit the chat message to every active user's chatroom. This is a major bug that I on concept I know how to fix it but not in syntax. I know, I would have to ask the io to emit with a correct path and with the right room. 
+
+```// io is listening
+  var socket = io();
+
+  socket.on('message', function(msg){
+    //console.log("this msg is ", msg)
+    $('#messages').append($('<p>').text(msg.Body));
+  });```
+
+#Resourcefulness
+
+User authentication in Django is backend 
+the pros are :  Read it, use it with ease
+				Internet of things opportunities
+				Asynchronous coding benefits
+				Multiparadigm approach bests Java
+
+
+the cons are :  Speed can be an issue
+				Absence from mobile computing and browsers
+				Design restrictions
+
+
+
