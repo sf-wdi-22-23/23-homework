@@ -1,0 +1,38 @@
+.jumbotron {
+	background: url('http://calvaryccphilly.org/wp-content/uploads/2014/02/blog_whatsonyourmind.jpg') center center;
+  background-size: cover;
+  height: 425px;
+  margin-bottom: 20px;
+}
+
+body {
+	background-color: #D0D0D0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+	color: #0066CC;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+li {
+	margin-top: 15px;
+	border-radius: 0px;
+}
+
+#post-number {
+	color: white;
+	background-color: #0066CC;
+}
+
+#blog-posts {
+	margin-top: 20px;
+}
+
+.glyphicon {
+	float: right;
+}
