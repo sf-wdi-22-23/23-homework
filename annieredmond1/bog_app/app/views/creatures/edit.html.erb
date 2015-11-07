@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4 col-sm-offset-8 text-center">
-			<h3><strong>Edit the creature!<strong></h3>
+			<h3 class="white"><strong>Edit the creature!<strong></h3>
 			<%= form_for @creature do |f| %>
 
 			    <%= f.text_field  :name, class:"form-control", placeholder:"Name" %> 
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-4 col-sm-offset-8 text-center" id="back-from-new">
+		<div class="col-sm-4 col-sm-offset-8 text-center white" id="back-from-new">
 			<h2>Changed your mind?<br><br> Click <%= link_to "here", creature_path%> to go back.</h2>
 		</div>
 	</div>

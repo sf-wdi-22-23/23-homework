@@ -7,7 +7,7 @@
 */
 
 body {
-
+	background-color: #EEEEEE;
 	background-image: url('https://images.unsplash.com/photo-1415202575743-775c5d474848?fit=crop&fm=jpg&h=800&ixlib=rb-0.3.5&q=80&w=1450');
 	background-repeat: no-repeat;
 	background-position: cover;
@@ -19,9 +19,23 @@ body {
 	margin-top: 400px;
 }
 
+.white {
+	color: white;
+}
+
+.jumbotron {
+	min-height: 900px;
+}
+
 img {
 	margin: 0 auto;
 	display: block;
+}
+
+.home {
+	width: 150px;
+	height: 80px;
+	font-size: 25px;
 }
 
 h1 {
