@@ -1,12 +1,14 @@
 <% @creatures.each do |creature| %>
-<h4>
+
 <div class='col-sm-4 col-sm-offset-4'>
 	<ul class='list-group list-unstyled'>
 		<li class='list-item unstyled'>	
 			Name: <%= creature.name %> <br>
-			Desciption: <%= creature.description %>
+			Desciption: <%= creature.description %> <br>
+			<%= button_to "Delete", creature, method: :delete %>
+
 		</li>
 	</ul>
 </div>
-</h4>
+
 <% end %>
