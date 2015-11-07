@@ -26,4 +26,20 @@ class CreaturesController < ApplicationController
 		render :show # render the show page -- it will have access to the @creature variable
 	end
 
+	def edit # show an EDIT form for a specific creature
+		id = params[:id] # save the id parameter to 'id' variable
+		@creature = Creature.find(id) # look up the creature by 'id' and save to an instance variable
+		render :edit # render the edit form view -- it will have access to the @creature instance variable
+	end
+
+	def update # update a creature in the database
+		creature_id = params[:id] # save the id paramater from the url
+		creature = Creature.find(creature_id) # find the creature to update by id
+		updated_attributes = params.require(:creature).permit(:name, :description) # get updated creature data from params
+		creature.update_attributes(updated_attributes) # update the creature
+		redirect_to creature # redirect to single creature show page for this creature
+		# ^ same as redirect_to creature_path(creature)
+		# ^ same as redirect_to "/creatures/#{creature.id}"
+	end
+
 end
