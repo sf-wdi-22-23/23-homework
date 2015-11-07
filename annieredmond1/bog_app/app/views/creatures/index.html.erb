@@ -1,13 +1,28 @@
-<h1>Creatures</h1>
 
-<% @creatures.each do |creature| %>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-8 text-center">
+			<h1><strong>Creatures</strong></h1>
+			
+			<h3>What's your favorite creature? Browse below or add a new one to our collection <%= link_to "here", new_creature_path%></h3>
+		</div>
+	</div>
+</div>
 
-   <div>
-        Name: <%= creature.name %> <br>
-        Description: <%=  creature.description %>
-        	<%= button_to "Delete", creature, method: :delete %>
-    </div>
-
-<% end %>
-
-
+<div class="container all-creatures">
+	<div class="row">
+		<% @creatures.each do |creature| %>
+  
+  		<div class="col-sm-4">
+	    	<div class="thumbnail">
+				  <img src="<%=creature.image%>" alt="...">
+	      		<div class="caption">
+				        <h2 class="text-center"><%= creature.name %> </h2>
+				        <p><%=  creature.description %></p> 
+				        <p><%= button_to "View", creature_path(:id => creature.id), class:"btn btn-default", method: :get %> <%= button_to "Delete", creature, class:"btn btn-default", method: :delete %></p>
+				    </div>
+	    	</div>
+	 		</div>
+		<% end %>
+	</div>
+</div>

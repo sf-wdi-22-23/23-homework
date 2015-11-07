@@ -1,4 +1,7 @@
-<div>
-    Name: <%= @creature.name %> <br>
-    Description: <%=  @creature.description %>
+<div class="jumbotron">
+    <h1 class="text-center"><%= @creature.name %></h1> <br>
+  	<img src="<%=@creature.image%>"><br>
+    <h3><%=  @creature.description %></h3>
+    <p class="text-center">Need to make a change?  Click <%= link_to "here", edit_creature_path%> to edit creature.</p>
+
 </div>

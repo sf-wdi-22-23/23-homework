@@ -9,7 +9,7 @@ class CreaturesController < ApplicationController
     end
     def create
         # validate params and save them as a variable
-        creature_params = params.require(:creature).permit(:name, :description)
+        creature_params = params.require(:creature).permit(:name, :description, :image)
         # create a new creature with those params
         creature = Creature.new(creature_params)
         # check that it saved
@@ -45,7 +45,7 @@ class CreaturesController < ApplicationController
         creature = Creature.find(creature_id)
 
         # get updated creature data from params
-        updated_attributes = params.require(:creature).permit(:name, :description)
+        updated_attributes = params.require(:creature).permit(:name, :description, :image)
         # update the creature
         creature.update_attributes(updated_attributes)
 
