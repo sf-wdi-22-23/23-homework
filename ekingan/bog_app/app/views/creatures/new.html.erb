@@ -1,0 +1,11 @@
+<div class='col-sm-4 col-sm-offset-4'>
+
+	<%= form_for @creature do |f| %>
+		<ul class="list-group list-unstyled">
+			<li class="list-item"><%= f.text_field :name %></li>
+			<li class="list-item"><%= f.text_area :description %></li>
+			<li class="list-item"><%= f.submit "save creature" %></li>
+		</ul>
+	<% end %>
+</div>
+
