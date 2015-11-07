@@ -1,0 +1,26 @@
+<!-- render create new creature link -->
+<div class="create_creature">
+	<%= render"create_creature_button_partial" %>
+</div>
+
+<!-- render the jumbotron partial -->
+<%= render "jumbotron_partial" %>
+
+<!-- for each creature in db, have list item -->
+<div class="container">
+	<div class="col-sm-6 col-sm-offset-3">
+		<ul class="list-group">
+			<% @creatures.each do |c| %>
+				<li class="list-group-item">
+					<span class="creature_name"> 
+						<%=link_to c do %>
+							<%= c.name %> 
+						<% end %>
+					</span>
+					<br>
+					<%= c.desc %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+</div>

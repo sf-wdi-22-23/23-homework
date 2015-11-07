@@ -1,0 +1,27 @@
+<!-- render back to homepage link -->
+<div class="homepage_link">
+	<%= render "back_to_homepage_partial" %>
+</div>
+
+<!-- render create new creature link -->
+<div class="create_creature">
+	<%= render"create_creature_button_partial" %>
+</div>
+
+<!-- render the jumbotron partial -->
+<%= render "jumbotron_partial" %>
+
+<!-- details for creature -->
+<div class="container">
+	<div class="col-sm-6 col-sm-offset-3">
+		<h1> <%= @creature.name %> </h1>
+		<hr>
+		<h4> <%= @creature.desc %> </h4>
+		<br>
+		<br>
+		<!-- link to update creature -->
+		<%= link_to "Update creature", edit_creature_path, class: "btn btn-danger" %>
+	</div>
+</div>
+
+
