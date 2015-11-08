@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :creatures, only: [:index]
+  resources :creatures, only: [:index, :new, :create, :show]
   
-  # root to: 'creatures#index'
-  get 'creatures/index'
+  root to:'creatures#index'
 
 
 end
