@@ -15,6 +15,7 @@ class CreaturesController < ApplicationController
     creature = Creature.new(creature_params)
 
     if creature.save 
+      #same as redirect_to creature_path(creature)
       redirect_to creature
     end
   end
@@ -25,6 +26,19 @@ class CreaturesController < ApplicationController
     # find the creature with that id and save to instance variable
     @creature = Creature.find(id)
     render :show
+  end
+
+  def edit
+    id = params[:id]
+    @creature = Creature.find(id)
+    render :edit
+  end
+
+  def update
+    creature_id = params[:id]
+    creature = Creature.find(creature_id)
+    updated_attributes = params.require(:creature).permit(:name, :description)
+    redirect_to creature
   end
 
 end
