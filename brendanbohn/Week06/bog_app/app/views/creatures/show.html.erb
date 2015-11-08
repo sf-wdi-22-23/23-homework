@@ -1,0 +1,7 @@
+<h1> <%= @creature.title %> </h1>
+<p> <%= @creature.desc %> </p>
+<img src="<%= @creature.img %>">
+
+<%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_creature_path %>
+<%= link_to "Delete", creature_path, method: :delete, data: { confirm: "Are you sure?"} %>
