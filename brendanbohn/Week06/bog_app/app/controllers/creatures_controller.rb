@@ -12,11 +12,11 @@ class CreaturesController < ApplicationController
 	end
 
 	def new
-		@creature = Creature.new
+		@creature = current_user.creatures.build
 	end
 
 	def create
-		@creature = Creature.new(creature_params)
+		@creature = current_user.creatures.build(creature_params)
 		if @creature.save
 			redirect_to @creature, notice: "Successfully created a new creature!"
 		else

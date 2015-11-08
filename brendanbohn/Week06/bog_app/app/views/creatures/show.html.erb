@@ -1,6 +1,7 @@
 <h1> <%= @creature.title %> </h1>
 <p> <%= @creature.desc %> </p>
 <img src="<%= @creature.img %>">
+<p> Submitted by: <%= @creature.user.email %> </p>
 
 <%= link_to "Back", root_path %>
 <%= link_to "Edit", edit_creature_path %>
