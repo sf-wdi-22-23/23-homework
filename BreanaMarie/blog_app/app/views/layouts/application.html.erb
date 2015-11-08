@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to "Home", root_path %>
+<div id='header' class="jumbotron">
+  <div class="container-fluid">
+  <%= link_to "Home", root_path %>
+  <%= link_to "New Creature", new_creature_path %>
+    
+  </div>
+  <h1>Welcome to the Starwars Creature Indexer</h1>
+</div>
+
 
 
 <%= yield %>

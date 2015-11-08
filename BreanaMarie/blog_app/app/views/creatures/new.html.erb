@@ -1,5 +1,12 @@
-<%= form_for @creature do |f| %>
-    <%= f.text_field :name %>
-    <%= f.text_area :description %>
-    <%= f.submit "save creature" %>
-<% end %>
+<div class="content">
+	<h2>Create a new Starwars Creature</h2>
+	<%= form_for @creature do |f| %>
+		<h2>Name of Creature</h2>
+	    <%= f.text_field :name %>
+	    </br>
+	    <h2>Description of Creature</h2>
+	    <%= f.text_area :description %>
+	    </br>
+	    <%= f.submit "save creature" %>
+	<% end %>
+</div>

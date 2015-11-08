@@ -1,3 +1,45 @@
 // Place all the styles related to the creatures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #335499;
+}
+
+#header{
+	display: block;
+	height: 200px;
+	margin-top: -10px;
+}
+.jumbotron {
+  background-image: url("http://news.toyark.com/wp-content/uploads/sites/4/2013/07/Star-Wars-Mission-Series-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.jumbotron h1 {
+	color: white;
+	text-shadow: 1px 1px #F2DF03;
+	text-align: right;
+	padding-top: 140px;
+
+}
+
+.container-fluid a {
+	text-align: right;
+	float: right;
+	margin-right: 10px;
+	color: white;
+}
+
+.content {
+	background-color: #F3F59B;
+	border-radius: 25px;
+	padding: 20px;
+	max-width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
