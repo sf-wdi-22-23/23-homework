@@ -1,5 +1,5 @@
 <h1>Creature Show Page</h1>
-
+<%= image_tag @creature.image.url(:medium ) %>
 <h1> <%= @creature.name %> </h1>
 <p> <%= @creature.desc %> </p>
 <p> Submitted by <%= @creature.user.email %> </p>

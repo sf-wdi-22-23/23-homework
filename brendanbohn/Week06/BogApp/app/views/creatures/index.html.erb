@@ -2,4 +2,7 @@
 
 <% @creatures.each do |c| %>
 	<h2> <%= link_to c.name, c %> </h2>
+	<%= link_to (image_tag c.image.url(:medium)), c %>
+	<p> <%= c.desc %> </p>
+	<p> Submitted by <%= c.user.email %> </p>
 <% end %>
