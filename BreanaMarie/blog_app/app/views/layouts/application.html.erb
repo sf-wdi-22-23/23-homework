@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id='header' class="jumbotron">
+  <div class="container-fluid">
+  <%= link_to "Home", root_path %>
+  <%= link_to "New Creature", new_creature_path %>
+    
+  </div>
+  <h1>Welcome to the Starwars Creature Indexer</h1>
+</div>
+
+
+
+<%= yield %>
+
+</body>
+</html>

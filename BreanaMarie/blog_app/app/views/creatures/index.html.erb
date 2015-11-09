@@ -1,0 +1,11 @@
+<div class="content">
+<% @creatures.each do |creature| %>
+
+    <div>
+        <h2>Name: <%= creature.name %> </h2>
+        <h3>Description: <%=  creature.description %></h3>
+        	<%= button_to "Delete", creature, method: :delete %>
+    </div>
+
+<% end %>
+</div>

@@ -1,0 +1,12 @@
+<div class="content">
+	<h2>Edit Starwars Creature</h2>
+	<%= form_for @creature do |f| %>
+		<h2>Name of Creature</h2>
+	    <%= f.text_field :name %>
+	    </br>
+	    <h2>Description of Creature</h2>
+	    <%= f.text_area :description %>
+	    </br>
+	    <%= f.submit "update creature" %>
+	<% end %>
+</div>
