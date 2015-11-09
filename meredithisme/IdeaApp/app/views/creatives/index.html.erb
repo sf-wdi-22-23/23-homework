@@ -1,21 +1,24 @@
 
 
-<div class="container">
-	<div class="text-center">
+<div class="container-fluid">
+	<div class="row blueline">
+		<img src="https://media1.giphy.com/media/sHCsBin2f1QnS/100.gif" id="logo">
 		<h1>Design Inspirations</h1>
 	</div>	
 		<% @creative.each do |creative| %>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-		        <img src="<%=  creative.cover_art %>" />
-				<div class="row">
-		        <%= creative.title %> <br>
-		        <%=  creative.artist %>
-		        <%=  creative.year %>
-		    </div>
-		 </div>
+		        <img src="<%=  creative.cover_art %>" /><br>
+			        <div class="row">
+			        <%= creative.title %> <br>
+			        <%=  creative.artist %>
+			        <%=  creative.year %>
+			        <%= button_to "Delete", creative, method: :delete, :class =>'deleteButton' %>
+		    	</div>
+		 	</div>
 		<% end %>
-	    </div>
+		</div>
+	    
 </div>
 
 

@@ -54,4 +54,16 @@ class CreativesController < ApplicationController
         redirect_to creative
        
     end
+
+     def destroy
+        # save the id parameter
+        id = params[:id]
+        # find the creature to delete by id
+        creative = Creative.find(id)
+        # destroy the creature
+        creative.destroy
+        # redirect to creatures index
+        redirect_to creatives_path
+        # ^ same as redirect_to "/creatures"
+    end
 end

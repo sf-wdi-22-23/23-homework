@@ -20,8 +20,32 @@ Creative.create ([
 	title: "Everywhere You Look",
     artist: "Unknown",
     year: 1996,
-    cover_art: "http://41.media.tumblr.com/58ccea8a24bd35d8e5b13ee36bc65a11/tumblr_nshptiCz421r4by7so1_250.jpg",
+    cover_art: "http://payload418.cargocollective.com/1/13/423158/10666045/1simple_670.jpg",
+    },
+
+    {
+	title: "Everywhere You Look",
+    artist: "Unknown",
+    year: 1996,
+    cover_art: "http://payload416.cargocollective.com/1/14/472521/10635291/metablob_crops_06_0098_670.png",
+    },
+
+    {
+	title: "Moby Dick",
+    artist: "Tiffany Stewart",
+    year: 1996,
+    cover_art: "http://payload58.cargocollective.com/1/6/219451/3479647/CROP_o.jpg",
+    },
+    
+    {
+	title: "Everywhere You Look",
+    artist: "Unknown",
+    year: 1996,
+    cover_art: "http://payload367.cargocollective.com/1/14/458336/9659174/warm6432-small_670.jpg",
     }
+
+
+
 
 
 ])
