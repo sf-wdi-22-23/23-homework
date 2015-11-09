@@ -4,15 +4,6 @@ Rails.application.routes.draw do
   root to: 'creatives#index'
   resources :creatives, only: [:index, :new, :create, :show, :edit, :update, :destroy]
 
-
-  # get 'creatives/index'
-
-  # get 'creatives/show'
-
-  # get 'creatives/new'
-
-  # get 'creatives/create'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -20,7 +11,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get 'creatives/:id' => 'creative#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

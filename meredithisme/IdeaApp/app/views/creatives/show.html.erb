@@ -3,6 +3,7 @@
 		<img src="https://media1.giphy.com/media/sHCsBin2f1QnS/100.gif" id="logo">
 		<h1>New Inspirations</h1>
 	</div>
+	
 <div class="row blueline">
 	<div class="col-sm-6 col-sm-offset-3 text-center">
 	    Title: <%= @creative.title %> <br>
@@ -12,3 +13,9 @@
 
 	</div>
 </div>
+	<div class="text-center">
+		<div class="editstyles">
+			<%= link_to "Back", creatives_path, :class =>'editButton' %>
+			<%= link_to "Edit", edit_creative_path, :class =>'deleteButton'%>
+		</div>
+	</div>

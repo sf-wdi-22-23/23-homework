@@ -1,5 +1,3 @@
-
-
 <div class="container-fluid">
 	<div class="row blueline">
 		<img src="https://media1.giphy.com/media/sHCsBin2f1QnS/100.gif" id="logo">
@@ -12,14 +10,14 @@
 			        <div class="row">
 			        <%= creative.title %> <br>
 			        <%=  creative.artist %>
-			        <%=  creative.year %>
-			        <%= button_to "Delete", creative, method: :delete, :class =>'deleteButton' %>
+			        <%=  creative.year %><br>
+			        <%= link_to "Delete", creative, class:"deleteButton", method: :delete %>
+			    	<%= link_to "View", creative_path(:id => creative.id), class:"editButton", method: :get %> 
 		    	</div>
 		 	</div>
 		<% end %>
 		</div>
+		<%= link_to "here", new_creative_path%>
+
 	    
 </div>
-
-
-		<!-- <p>Find me in app/views/creatives/index.html.erb</p> -->

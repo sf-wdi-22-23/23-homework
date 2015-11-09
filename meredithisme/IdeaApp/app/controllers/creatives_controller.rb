@@ -1,4 +1,5 @@
 class CreativesController < ApplicationController
+ 
   def index
   	@creative = Creative.all
   	render :index
@@ -46,7 +47,7 @@ class CreativesController < ApplicationController
         creative = Creative.find(creative_id)
 
         # get updated creature data from params
-        updated_attributes = params.require(:creative).permit(:name, :description)
+        updated_attributes = params.require(:creative).permit(:title, :artist, :year, :cover_art)
         # update the creature
         creative.update_attributes(updated_attributes)
 
