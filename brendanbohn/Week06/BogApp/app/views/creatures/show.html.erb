@@ -1,11 +1,28 @@
-<h1>Creature Show Page</h1>
-<%= image_tag @creature.image.url(:medium ) %>
-<h1> <%= @creature.name %> </h1>
-<p> <%= @creature.desc %> </p>
-<p> Submitted by <%= @creature.user.email %> </p>
-
-<div> 
-	<%= link_to "Back", root_path %> 
-	<%= link_to "Edit", edit_creature_path %>
-	<%= link_to "Delete", creature_path, method: :delete, data: { confirm: "Are you sure?"} %>
+<div id="creature_show" class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-heading creature_image">
+				<%= image_tag @creature.image.url %>
+			</div>
+			<div class="panel-body">
+				<h1> <%= @creature.name %> </h1>
+				<p class="description"> <%= @creature.desc %> </p>
+			</div>
+			<div class="panel-footer">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="user">
+							Submitted by <%= @creature.user.email %>
+						</p>
+					</div>
+					<div class="col-md-6">
+						<div class="btn-group pull-right">
+							<%= link_to "Edit", edit_creature_path, class: "btn btn-default" %>
+							<%= link_to "Delete", creature_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-default" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
