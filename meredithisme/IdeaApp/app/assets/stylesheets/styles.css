@@ -1,0 +1,24 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Oswald', 'Fira-Sans', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	border-bottom: 1px solid #333;
+	text-transform: uppercase;
+	padding: 2%;
+}
+
+img {
+	clear: none;
+	padding: 0;
+	margin: 0;
+	background-color: #4EBDDB;
+	margin-top: 9%;
+
+}

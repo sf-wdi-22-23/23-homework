@@ -1,0 +1,22 @@
+
+
+<div class="container-fluid">
+	<div class="text-center">
+		<h1>Design Inspirations</h1>
+	</div>	
+		<% @creative.each do |creative| %>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+		        <img src="<%=  creative.cover_art %>" />
+		<div class="row">
+		        <%= creative.title %> <br>
+		        <%=  creative.artist %>
+		        <%=  creative.year %>
+		    </div>
+		 </div>
+		<% end %>
+	    </div>
+</div>
+
+
+		<!-- <p>Find me in app/views/creatives/index.html.erb</p> -->
