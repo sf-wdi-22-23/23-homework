@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
 
   root to: 'creatives#index'
-  resources :creatives, only: [:index, :new, :create, :show]
+  resources :creatives, only: [:index, :new, :create, :show, :edit, :update]
 
 
   # get 'creatives/index'

@@ -1,14 +1,16 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	width: 100%;
+	letter-spacing: 1px;
 }
 
 h1 {
 	font-family: 'Oswald', 'Fira-Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 36px;
+	color: #2D2764;
 	border-bottom: 1px solid #333;
 	text-transform: uppercase;
 	padding: 2%;
@@ -16,17 +18,63 @@ h1 {
 
 img {
 	clear: none;
-	padding: 0;
+	padding: 9px;
 	margin: 0;
-	background-color: #4EBDDB;
 	margin-top: 9%;
+	margin-bottom: 5%;
+	max-width:300px;
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%);
 }
 
-textarea {
-	border-left: none;
-	border-right: none;
-	border-top: none;
+#creative_artist:active {
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+		-moz-box-shawdow: none !important;
+}
+
+img:hover {
+	z-index: 1;
+	filter: graynone; /* IE6-9 */
+	-webkit-filter: grayscale(0%);
+}
+
+input {
+	border: none;
 	text-decoration: none;
-	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
+	margin: 9px auto;
+	border-bottom: 1px solid #fff;
+	width: 300px;
+	background: transparent;
+	box-shadow: 0 #fff !important;
+	-webkit-box-shadow: none;
+		-moz-box-shawdow: none;
+	color: #fff;
+}
+
+
+input:hover {
+	background: transparent;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+		-moz-box-shawdow: none !important;
+}
+
+input:active {
+}
+
+#submitMe {
+	width: 116px;
+}
+
+.colorform {
+	height: 300px;
+	color: #fff;
+	margin-top: 5%;
+	background-color:  rgba(212, 66, 60, 0.9);
+}
+
+#title {
+	margin-top: 30px;
 }

@@ -4,12 +4,13 @@
 <div class="row">
 	<div class="col-sm-12 text-center">
 		
+		<div class="col-sm-6 col-sm-offset-3 colorform">
 		<%= form_for :creative, url: "/creatives", method: "post" do |f| %>
-		    <%= f.text_field :title %><br>
-		    <%= f.text_area :artist %><br>
-		     <%= f.text_area :year %><br>
-		      <%= f.text_area :cover_art %><br>
-		    <%= f.submit "save creative" %>	
+		    Title <%= f.text_field :title, :id =>'title' %><br>
+		    Artist <%= f.text_field :artist %><br>
+		    Year <%= f.text_field :year %><br>
+		    Image <%= f.text_field :cover_art %><br>
+		    <%= f.submit "save creative", :class =>'btn btn-info', :id =>'submitMe'%>	
 		<% end %>
 		</div>
 	</div>

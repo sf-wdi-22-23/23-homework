@@ -6,7 +6,7 @@ class CreativesController < ApplicationController
 
   def show
      id = params[:id]
-    @creature = Creature.find(id)
+    @creative = Creative.find(id)
     render :show
   end
 
@@ -29,4 +29,29 @@ class CreativesController < ApplicationController
       
   		end
 	end
+
+	def edit
+        # save the id parameter to a variable
+        id = params[:id]
+        # look up the creature by id and save to an instance variable
+        @creative = Creative.find(id)
+        # render the edit form view -- it will have access to the @creature instance variable
+        render :edit	
+    end
+
+     def update
+        # save the id paramater from the url
+        creative_id = params[:id]
+        # find the creature to update by id
+        creative = Creative.find(creative_id)
+
+        # get updated creature data from params
+        updated_attributes = params.require(:creative).permit(:name, :description)
+        # update the creature
+        creative.update_attributes(updated_attributes)
+
+        # redirect to single creative show page for this creative
+        redirect_to creative
+       
+    end
 end

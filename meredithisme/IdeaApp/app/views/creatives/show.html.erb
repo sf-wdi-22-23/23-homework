@@ -1,7 +1,12 @@
 <div class="text-center">
-	<h1>Everyone can be creative</h1>
+	<h1>You're an inspiration</h1>
 </div>
-<div>
-    Title: <%= @creative.title %> <br>
-    Artist: <%=  @creative.artist %>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 text-center">
+	    Title: <%= @creative.title %> <br>
+	    Artist: <%=  @creative.artist %><br>
+	    Year: <%=  @creative.year %><br>	
+	   	<img src="<%=  @creative.cover_art %>"/>
+	   	
+	</div>
 </div>
