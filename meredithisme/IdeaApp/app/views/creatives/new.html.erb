@@ -1,2 +1,16 @@
-<h1>Creatives#new</h1>
-<p>Find me in app/views/creatives/new.html.erb</p>
+<div class="text-center">
+	<h1 class="creative">Creatives</h1>
+</div>
+<div class="row">
+	<div class="col-sm-12 text-center">
+		
+		<%= form_for :creative, url: "/creatives", method: "post" do |f| %>
+		    <%= f.text_field :title %><br>
+		    <%= f.text_area :artist %><br>
+		     <%= f.text_area :year %><br>
+		      <%= f.text_area :cover_art %><br>
+		    <%= f.submit "save creative" %>	
+		<% end %>
+		</div>
+	</div>
+</div>
