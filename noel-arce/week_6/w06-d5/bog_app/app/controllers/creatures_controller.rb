@@ -42,4 +42,13 @@ class CreaturesController < ApplicationController
 		# ^ same as redirect_to "/creatures/#{creature.id}"
 	end
 
+	
+	def destroy # delete a specific creature by id
+		id = params[:id] # save the id parameter
+		creature = Creature.find(id) # find the creature to delete by id
+		creature.destroy # destroy the creature
+		redirect_to creatures_path # redirect to creatures index
+		# ^ same as redirect_to "/creatures"
+	end
+
 end
