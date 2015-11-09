@@ -1,7 +1,17 @@
-<div class="col-md-6 col-md-offset-3">
-	<%= image_tag @creature.image.url(:medium ) %>
-	<h1>Edit Creature</h1>
-	<%= render 'form' %>
-	<%= link_to "Cancel", creature_path %>
-
+<div id="creature_show" class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-heading creature_image">
+				<%= image_tag @creature.image.url %>
+			</div>
+			<div class="panel-body">
+				<h1>Edit Creature</h1>
+				<%= render 'form' %>
+				<%= link_to "Cancel", creature_path %>
+			</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+
