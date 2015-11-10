@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BogApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class='container'>
+	<div class='row'>
+		<div class='col-sm-8 col-sm-offset-2'>
+			<%= link_to "Add a New Creature", new_creature_path %>
+			<%= link_to "Go Home", root_path %>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
