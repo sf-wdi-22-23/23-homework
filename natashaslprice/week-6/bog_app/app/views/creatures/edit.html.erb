@@ -1,0 +1,31 @@
+<!-- render back to homepage link -->
+<div class="homepage_link">
+	<%= render "back_to_homepage_partial" %>
+</div>
+
+<!-- render the jumbotron partial -->
+<%= render "jumbotron_partial" %>
+
+<!-- creature details -->
+<div class="container">
+	<div class="col-sm-6 col-sm-offset-3">
+		<h1> <%= @creature.name %> </h1>
+		<hr>
+		<h4> <%= @creature.desc %> </h4>
+	</div>
+</div>
+
+<!-- form to edit creature -->
+<div class="container">
+	<div class="col-sm-6 col-sm-offset-3">
+		<%= form_for @creature do |f| %>
+			<label for="name">Creature name:</label>
+			<%= f.text_field :name, required: true, class: "form-control" %>
+			<br>
+			<label for="desc">Description:</label>
+			<%= f.text_area :desc, required: true, class: "form-control" %>
+			<br>
+			<%= f.submit "Update creature", class: "btn btn-primary", id:"new_creature_submit_btn" %>
+		<% end %>
+	</div>
+</div>
