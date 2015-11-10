@@ -1,0 +1,9 @@
+<div class="jumbotron">
+    <h1 class="text-center"><%= @creature.name %></h1> <br>
+  	<img src="<%=@creature.image%>"><br>
+    <h3><%=  @creature.description %></h3>
+    <p class="text-center">Need to make a change?  Click <%= link_to "here", edit_creature_path%> to edit creature.</p>
+    <div class="text-center">
+    <%= button_to "Home", creatures_path, class:"btn btn-default home", method: :get %>
+
+</div>

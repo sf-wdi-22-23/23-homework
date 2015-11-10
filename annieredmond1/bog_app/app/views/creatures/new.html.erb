@@ -1,0 +1,25 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-8 text-center white">
+			<h3>Create a New Creature!</h3>
+			<%= form_for @creature do |f| %>
+
+			    <%= f.text_field  :name, class:"form-control", placeholder:"Name" %> 
+			    <%= f.text_area :description, class:"form-control", placeholder:"Description..." %>
+			    <%= f.text_field :image, class:"form-control", placeholder:"Type image url here..."%>
+			    <%= f.submit "Save Creature", class:"btn btn-primary btn-lg pull-right" %>
+
+			<% end %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-8 text-center white" id="back-from-new">
+			<h2>Changed your mind?<br><br> Click <%= link_to "here", creatures_path%> to go back.</h2>
+		</div>
+	</div>
+</div>
+
+
+
+

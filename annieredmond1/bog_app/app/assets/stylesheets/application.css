@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+	background-color: #EEEEEE;
+	background-image: url('https://images.unsplash.com/photo-1415202575743-775c5d474848?fit=crop&fm=jpg&h=800&ixlib=rb-0.3.5&q=80&w=1450');
+	background-repeat: no-repeat;
+	background-position: cover;
+	font-family: 'Bad Script', cursive;
+
+}
+.all-creatures {
+	position: relative;
+	margin-top: 400px;
+}
+
+.white {
+	color: white;
+}
+
+.jumbotron {
+	min-height: 900px;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
+}
+
+.home {
+	width: 150px;
+	height: 80px;
+	font-size: 25px;
+}
+
+h1 {
+	font-size: 120px;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#back-from-new {
+	margin-top: 100px;
+}
