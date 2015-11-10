@@ -1,0 +1,16 @@
+div {
+  text-decoration: none !important;
+  color: blue;
+  &:hover {
+    color:darkgrey;
+  }
+}
+
+#footer {
+  border: {
+    width: 1px;
+    color: #ccc;
+    style: solid;
+  }
+}
+
