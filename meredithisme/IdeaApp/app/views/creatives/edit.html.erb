@@ -1,0 +1,20 @@
+<div class="container-fluid">
+		<div class="row blueline">
+			<img src="https://media1.giphy.com/media/sHCsBin2f1QnS/100.gif" id="logo">
+			<h1>Design Inspirations</h1>
+	</div>
+
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<div class="col-xs-12 col-sm-6 col-sm-offset-3 colorform">
+		<%= form_for @creative do |f| %>
+    	Title <%= f.text_field :title, :id =>'title' %><br>
+	    Artist <%= f.text_field :artist %><br>
+	    Year <%= f.text_field :year %><br>
+	    Image Url <%= f.text_field :cover_art, :id =>'imageUrl'%><br>
+	    <%= f.submit "Submit", :class =>'btn btn-info', :id =>'submitMe'%>
+
+<% end %>
+
+
+</div>
