@@ -1,0 +1,26 @@
+{
+  "name": "micro-blog-with-mongo",
+  "version": "1.0.0",
+  "description": "Scot's Microblog:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.1.12",
+    "body-parser": "^1.14.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaupin/microblog-with-mongoose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smaupin/microblog-with-mongoose/issues"
+  },
+  "homepage": "https://github.com/smaupin/microblog-with-mongoose#readme"
+}
