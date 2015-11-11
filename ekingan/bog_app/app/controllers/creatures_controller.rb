@@ -11,7 +11,7 @@ class CreaturesController < ApplicationController
 	end
 
 	def create
-		creature_params = params.require(:creature).permit(:name, :description)
+		creature_params = params.require(:creature).permit(:name, :description, :image)
 		creature = Creature.new(creature_params)
 
 		if creature.save
@@ -36,7 +36,7 @@ class CreaturesController < ApplicationController
 	def update
 		creature_id = params[:id]
 		creature = Creature.find(creature_id)
-		updated_attributes = params.require(:creature).permit(:name, :description)
+		updated_attributes = params.require(:creature).permit(:name, :description, :image)
 		creature.update_attributes(updated_attributes)
 		redirect_to :creature
 	end
