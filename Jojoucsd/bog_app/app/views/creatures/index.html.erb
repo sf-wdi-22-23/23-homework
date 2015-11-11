@@ -3,7 +3,10 @@
 	<div>
 		Name: <%= c.name %> <br>
 		Description: <%= c.description %>
-			<%= button_to "Delete", c, method: :delete %>
+			<%= button_to "Delete", c, method: :delete, class: 'btn btn-danger' %>
+			<button type="button" class="btn btn-primary">Update</button>
+			<%= image_tag 'lcph02.jpg' %>
+			<%= image_tag 'LCPM03.jpg' %>
 	</div>
 
 <% end %>
