@@ -1,0 +1,16 @@
+<div class="col-sm-6 col-sm-offset-3">
+  <legend>Create a Creature</legend>  
+  <%= form_for @creature do |f| %>
+    <div class="form-group">
+      <label for="title">Name</label>
+      <%= f.text_field :name, class:"form-control" %>      
+    </div>
+    <div class="form-group">
+      <label for="desc">Description</label>
+      <%= f.text_area :description, class:'form-control' %>      
+    </div>
+    <div class="text-right">
+      <%= f.submit class:'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
