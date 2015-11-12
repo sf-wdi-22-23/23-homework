@@ -1,0 +1,19 @@
+<div class="jumbotron">
+	<div class="container text-center">
+		<h1>Are you a COOL person?</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="col-sm-4 col-sm-offset-4">
+		<h4 class="text-center">Let's see...</h4>
+		<hr>
+		<%= form_for @user do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name, class: "form-control" %>
+			<%= f.label :dob, value: "Date of Birth" %>
+			<%= f.text_field :dob, class: "form-control" %>
+			<br>
+			<%= f.submit class: "btn btn-success" %>
+		<% end %>
+	</div>
+</div>
