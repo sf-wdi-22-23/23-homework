@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   # user routes
-  root 'users#index'
-  resources :users, only: [:create, :show]
+  root 'users#splash'
+  resources :users, only: [:create, :show, :index]
   get 'alternative'=> 'users#alternative'
 
 end
