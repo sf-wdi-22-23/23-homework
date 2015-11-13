@@ -1,0 +1,15 @@
+<div class="jumbotron">
+WHAATT
+</div>
+
+<% @creatures.each do |creature| %>
+
+    <div>
+        Name: <%= creature.name %> <br>
+        Description: <%=  creature.description %>
+    </div>
+
+<% end %>
+</div>
+
+<%= image_tag 'pokeball.jpg' %>
