@@ -6,7 +6,9 @@
 		<% @creative.each do |creative| %>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-		        <img src="<%=  creative.cover_art %>" /><br>
+				<%= link_to creative_path(:id => creative.id) do %>
+			    	<img src="<%=  creative.cover_art %>" /><br>
+			    <% end %>
 			        <div class="row">
 			        <%= creative.title %> <br>
 			        <%=  creative.artist %>
@@ -17,7 +19,11 @@
 		 	</div>
 		<% end %>
 		</div>
-		<%= link_to "here", new_creative_path%>
+
+		<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+			<%= image_tag 'circles.gif' %>
+		</div>
 
 	    
 </div>
+

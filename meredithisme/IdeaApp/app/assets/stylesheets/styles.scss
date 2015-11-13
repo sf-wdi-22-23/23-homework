@@ -1,0 +1,210 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	width: 100%;
+	letter-spacing: 1px;
+	margin-left: 50px solid;
+	margin-right: 50px solid;
+
+}
+
+.container-fluid {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#logo {
+	margin-bottom: -15%;
+	filter: none;
+	float: left;
+	margin-top: 10px;
+	max-height: 75px;
+	max-width: 75px;
+	-webkit-filter: grayscale(0%);
+}
+
+.blueline {
+	border-bottom: 1px solid #0031F1;
+	width: 100%;
+	height: auto;
+	clear: right;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 5%;
+}
+
+h1 {
+	float: left;
+	margin-left: 5%;
+	font-family:'Oswald' sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	color: #0031F1;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding: 2%;
+}
+
+.editButton {
+	width: 30px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-family: 'Avenir', sans-serif;
+	font-size: 12px;
+	color:rgba(212, 66, 60, 0.7);
+	clear :none;
+}
+
+
+.editButton:hover {
+	color: #0031F1;
+	text-decoration: none;
+}
+
+.deleteButton {
+	margin-top: 10px;
+	margin-right: 50px;
+	font-family: 'Avenir', sans-serif;
+	font-size: 12px;
+	color: rgba(212, 66, 60, 0.7);
+}
+
+.deleteButton:hover {
+	color: #0031F1;
+	text-decoration: none;
+}
+
+.deleteButton:active {
+	color: #0031F1;
+}
+
+.editstyles {
+	clear: none;
+	margin-top: -40px;
+	display: inline-block;
+	margin-bottom: 10%;
+
+}
+
+img {
+	clear: none;
+	padding: 9px;
+	margin-top: 9%;
+	margin-bottom: 5%;
+	max-width:300px;
+	max-height: 350px;
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%);
+}
+
+img:hover {
+	z-index: 1;
+	filter: graynone; /* IE6-9 */
+	-webkit-filter: grayscale(0%);
+}
+
+#title {
+	margin-top: 20px;
+}
+
+#rightBtn {
+	float: right;
+}
+
+ 
+/* ======== FORM STYLES ======== */
+
+
+input {
+	border: none;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 9px auto;
+	border-bottom: 1px solid #fff;
+	width: 300px;
+	background: transparent;
+	box-shadow: 0 #fff !important;
+	-webkit-box-shadow: none;
+		-moz-box-shawdow: none;
+	color: #fff;
+}
+
+
+input:hover {
+	background: transparent;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+		-moz-box-shawdow: none !important;
+}
+
+#imageUrl {
+	left: -25px;
+
+}
+
+#submitMe {
+	width: 116px;
+}
+
+input#title {
+	margin-left: 5%;
+}
+
+input#artist {
+	margin-left: 8%;
+}
+
+input#year {
+	margin-left: 9%;
+}
+
+input#cover_art {
+	margin-left: 6%;
+}
+
+
+
+
+
+.colorform {
+	padding-top: 3%;
+	height: 350px;
+	color: #fff;
+	margin-top: 5%;
+	background-color:  rgba(212, 66, 60, 0.9);
+	opacity: 0;
+	animation: profile 1s alternate ease .2s;
+	animation-fill-mode: forwards; 
+   		-webkit-animation: profile 1s 1 alternate easein .2s;
+   			-moz-animation: profile 1s 1 alternate easein .2s;
+   				-ms-animation: profile 1s 1 alternate easein .2s;
+   					-o-animation: profile 1s 1 alternate easein .2s;
+}
+
+/* ======= ANIMATIONS ======= */
+
+
+@-webkit-keyframes profile {
+   0% {opacity: 0; top: 0px;}
+   100% {opacity: 1; top: 0;}
+}
+@-moz-keyframes profile {
+   0% {opacity: 0; top: 0px;}
+   100% {opacity: 1; top: 0;}
+}
+@-ms-keyframes profile {
+   0% {opacity: 0; top: 0px;}
+   100% {opacity: 1; top: 0;}
+}
+@-o-keyframes profile {
+   0% {opacity: 0; top: 0px;}
+   100% {opacity: 1; top: 0;}
+}
+@keyframes profile {
+   0% {opacity: 0; top: 0px;}
+   100% {opacity: 1; top: 0;}
+}
+
