@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <a href="/" class="navbar-brand">
+    <%= image_tag 'storm_trooper.png', style: "height:30px" %>
+  </a>
+  <div class="jumbotron text-center">
+    <h2>Creatures of the Bog</h2>
+  </div>
+</nav>
+
+
+<div class="col-sm-6 col-sm-offset-3">
+  <div>
+    <%= link_to "Make a New Creature", :new_creature, class: 'text-center'%>
+  </div>
+ 
+  <% @creatures.each do |creature| %>
+    <div style="margin: 10px">
+      <strong>Name:</strong> <%= creature.name %><br>
+      <strong>Description:</strong> <%= creature.description %>
+      <%= link_to "Edit", creature, method: :edit , class: "btn btn-xs" %>
+      <%= button_to "Delete", creature, method: :delete , class: "btn btn-xs" %>
+    </div>
+  <% end %>
+</div>
+
+
