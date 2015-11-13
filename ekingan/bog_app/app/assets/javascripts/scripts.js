@@ -1,0 +1,1 @@
+console.log("adams lives to serve");

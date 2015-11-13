@@ -1,3 +1,6 @@
+<%=link_to "Add Creature", new_creature_path, class:"btn btn-sm btn-danger" %>
+
+
 <% @creatures.each do |creature| %>
 
 <div class='col-sm-4 col-sm-offset-4'>
@@ -5,6 +8,7 @@
 		<li class='list-item unstyled'>	
 			Name: <%= creature.name %> <br>
 			Desciption: <%= creature.description %> <br>
+			<%= image_tag creature.image %>
 			<%= button_to "Delete", creature, method: :delete %>
 
 		</li>
